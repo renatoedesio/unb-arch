@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{canfora_achievements_2011}
+G.~Canfora, M.~Di~Penta, and L.~Cerulo.
+\newblock Achievements and challenges in software reverse engineering.
+\newblock 54(4):142, 2011.
+
+\bibitem{ducasse_software_2009}
+S.~Ducasse and D.~Pollet.
+\newblock Software architecture reconstruction: A process-oriented taxonomy.
+\newblock 35(4):573--591, 2009.
+
+\bibitem{Feijs_loe}
+L.~Feijs and R.~De~Jong.
+\newblock 3d visualization of software architectures.
+\newblock {\em Commun. ACM}, 41(12):73--78, Dec. 1998.
+
+\bibitem{ghanam_survey_2008}
+Y.~Ghanam and S.~Carpendale.
+\newblock A survey paper on software architecture visualization.
+\newblock 2008.
+
+\bibitem{Jain_Murty_1999}
+A.~K. Jain, M.~N. Murty, and P.~J. Flynn.
+\newblock Data clustering: A review.
+\newblock {\em ACM Comput. Surv.}, 31(3):264--323, Sept. 1999.
+
+\bibitem{Juristo_2010}
+N.~Juristo and A.~M. Moreno.
+\newblock {\em Basics of Software Engineering Experimentation}.
+\newblock Springer Publishing Company, Incorporated, 1st edition, 2010.
+
+\bibitem{kazman_view_1998}
+R.~Kazman and S.~J. Carriere.
+\newblock View extraction and view fusion in architectural understanding.
+\newblock In {\em Software Reuse, 1998. Proceedings. Fifth International
+  Conference on}, pages 290--299. {IEEE}, 1998.
+
+\bibitem{lanza_codecrawler-lessons_2003}
+M.~Lanza.
+\newblock Codecrawler-lessons learned in building a software visualization
+  tool.
+\newblock In {\em Software Maintenance and Reengineering, 2003. Proceedings.
+  Seventh European Conference on}, pages 409--418. {IEEE}, 2003.
+
+\bibitem{lungu_lanza_2007}
+M.~Lungu and M.~Lanza.
+\newblock Exploring inter-module relationships in evolving software systems.
+\newblock In {\em Software Maintenance and Reengineering, 2007. CSMR '07. 11th
+  European Conference on}, pages 91--102, March 2007.
+
+\bibitem{Mancoridis_1999}
+S.~Mancoridis, B.~S. Mitchell, Y.~Chen, and E.~R. Gansner.
+\newblock Bunch: A clustering tool for the recovery and maintenance of software
+  system structures.
+\newblock In {\em Proceedings of the IEEE International Conference on Software
+  Maintenance}, ICSM '99, pages 50--, Washington, DC, USA, 1999. IEEE Computer
+  Society.
+
+\bibitem{craft}
+B.~Mitchell and S.~Mancoridis.
+\newblock Craft: a framework for evaluating software clustering results in the
+  absence of benchmark decompositions [clustering results analysis framework
+  and tools].
+\newblock In {\em Reverse Engineering, 2001. Proceedings. Eighth Working
+  Conference on}, pages 93--102, 2001.
+
+\bibitem{mitchell_heuristic_2002}
+B.~S. Mitchell.
+\newblock A heuristic search approach to solving the software clustering
+  problem.
+\newblock 2002.
+
+\bibitem{Platenius_2012}
+M.~Platenius, M.~von Detten, and S.~Becker.
+\newblock Archimetrix: Improved software architecture recovery in the presence
+  of design deficiencies.
+\newblock In {\em Software Maintenance and Reengineering (CSMR), 2012 16th
+  European Conference on}, pages 255--264, March 2012.
+
+\bibitem{Sangal_2005}
+N.~Sangal, E.~Jordan, V.~Sinha, and D.~Jackson.
+\newblock Using dependency models to manage complex software architecture.
+\newblock In {\em Proceedings of the 20th Annual ACM SIGPLAN Conference on
+  Object-oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  '05, pages 167--176, New York, NY, USA, 2005. ACM.
+
+\bibitem{shtern_clustering_2012}
+M.~Shtern and V.~Tzerpos.
+\newblock Clustering methodologies for software engineering.
+\newblock {\em Adv. Soft. Eng.}, 2012:1:1--1:1, Jan. 2012.
+
+\bibitem{Tekinerdogan_2009}
+B.~Tekinerdogan, F.~Scholten, C.~Hofmann, and M.~Aksit.
+\newblock Concern-oriented analysis and refactoring of software architectures
+  using dependency structure matrices.
+\newblock In {\em Proceedings of the 15th Workshop on Early Aspects}, EA '09,
+  pages 13--18, New York, NY, USA, 2009. ACM.
+
+\bibitem{teyseyre_overview_2009}
+A.~Teyseyre and M.~Campo.
+\newblock An overview of 3d software visualization.
+\newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
+  15(1):87--105, Jan 2009.
+
+\bibitem{tzerpos_comprehension-driven_2001}
+V.~Tzerpos and R.~Holt.
+\newblock Accd: an algorithm for comprehension-driven clustering.
+\newblock In {\em Reverse Engineering, 2000. Proceedings. Seventh Working
+  Conference on}, pages 258--267, 2000.
+
+\bibitem{Tzerpos_vassilios}
+V.~Tzerpos and R.~C. Holt.
+\newblock Acdc: An algorithm for comprehension-driven clustering.
+\newblock In {\em Proceedings of the Seventh Working Conference on Reverse
+  Engineering (WCRE'00)}, WCRE '00, pages 258--, Washington, DC, USA, 2000.
+  IEEE Computer Society.
+
+\bibitem{wettel_software_2011}
+R.~Wettel, M.~Lanza, and R.~Robbes.
+\newblock Software systems as cities: a controlled experiment.
+\newblock In {\em Proceedings of the 33rd International Conference on Software
+  Engineering}, pages 551--560. {ACM}, 2011.
+
+\bibitem{Wiggerts}
+T.~Wiggerts.
+\newblock Using clustering algorithms in legacy systems remodularization.
+\newblock In {\em Reverse Engineering, 1997. Proceedings of the Fourth Working
+  Conference on}, pages 33--43, Oct 1997.
+
+\bibitem{zapalowski_revealing_2014}
+V.~Zapalowski, I.~Nunes, and D.~J. Nunes.
+\newblock Revealing the relationship between architectural elements and source
+  code characteristics.
+\newblock In {\em Proceedings of the 22nd International Conference on Program
+  Comprehension}, pages 14--25. {ACM}, 2014.
+
+\end{thebibliography}
