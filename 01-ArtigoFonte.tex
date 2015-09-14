@@ -284,7 +284,8 @@ of model produced using only one technique and then compare the similarity
 of model produced using the two techniques.}
 
 
-To calculate the accuracy of the \replaced{recovered}{obtained} architectural models, 
+\added[remark={parce haver um learning-effect}]{To calculate 
+the accuracy} of the \replaced{recovered}{obtained} architectural models, 
 and answer the questions of the experiment, we used the 
 Jaccard similarity coefficient, defined by the formula:
 
@@ -295,13 +296,23 @@ Jaccard similarity coefficient, defined by the formula:
 Here: $Sj$ is the coefficient of Jaccard; $a$= the number of common receovered 
 modules; $b$= number of modules recovered in B but not in A; $c$= number of recovered 
 modules in A, but not in B. In the experiment, model B was produced by a domain expert, while the model 
-A was produced by participants in the experiment.
+A was produced by \added{the}participants \replaced{of}{in} the experiment.
 
 \subsection{Design}%
 
-This section describes the experiment plan, and demonstrates how the experiment was designed. This allows the execution of other studies based on the same plan \cite{Juristo_2010}.
+\added[remark={Achei um pouco confuso esse par\'{a}grafo. 
+Segue uma sugest\~{a}o}]{This section presents the experimental design of 
+this research, in a level of details that might help other researchers to replicate 
+our study~\cite{Juristo_2010} using a similar setting.}
 
-Figure \ref{design_experimento} illustrates the experimental design. Subjects were divided into two groups. Participants in Group 1 started the extraction in a Visual Basic system using the clustering technique. The results of this extraction was collected. Then were presented the second technique and requested to produce a second model, applying both techniques. Afterwards, the same procedure was applied to the Java systems, but on the reverse order, i.e, first using software visualization and then clustering. For the participants in group 2, the same procedure applied, but starting with the software visualization technique.
+%% \deleted{This section describes the experiment plan 
+%% and demonstrates how 
+%% the experiment was designed. This allows the execution of 
+%% other studies based on the same plan~\cite{Juristo_2010}.}
+
+\added[remark={seria importante descrever quais s\~{a}o 
+as vari\'{a}veis envolvidas, e quais fatores precisam / est\~{a}o 
+sendo controlados com esse design. como os grupos foram formados?}]{Figure~\ref{design_experimento} illustrates the experimental design}. Subjects were divided into two groups. Participants in Group 1 started the extraction in a Visual Basic system using the clustering technique. The results of this extraction was collected. Then were presented the second technique and requested to produce a second model, applying both techniques. Afterwards, the same procedure was applied to the Java systems, but on the reverse order, i.e, first using software visualization and then clustering. For the participants in group 2, the same procedure applied, but starting with the software visualization technique.
 
 \begin{figure}[!h]
 	\centering
