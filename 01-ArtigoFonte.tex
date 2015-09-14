@@ -267,25 +267,35 @@ The underlying research questions of the experiment are as follows:
 
 \begin{enumerate}[(RQ1)]
 \item Does the use of software visualization technique, along with the clustering technique, increases the accuracy of the architectural model produced, in comparison with using only one of the techniques? 
-\item \added[remark={temos interesse nessa quest\~{a}o de pesquisa}]{Does the results are affected by the programming language used in the object systems?}
+\item \added[remark={temos interesse nessa quest\~{a}o de pesquisa?}]{Does the results are affected by the programming language used in the object systems?}
 \item Can the order of execution of the techniques influence the results? \\
 \end{enumerate} 
 
+Each participant \added{recovered the architecture} \replaced{by 
+applying two reengineering approaches per session}{prepared}\added{, which produced} two models
+\deleted{per session}. In the first \replaced{session}{model}, the participant 
+applied only one technique (\replaced[remark={Por que clustering e visualization 
+s\~{a}o tratados como t\'{e}cnicas distintas?}]{either }{or} clustering software or 
+software visualization). After obtaining the first model, the other technique was presented and 
+it was requested to produce a new model, based on the two techniques. 
+\added[remark={muito dificil compreender esse paragrafo}]{So, it was possible 
+to calculate the \added[remark={similaridade ou acuracia?}]{similarity} 
+of model produced using only one technique and then compare the similarity 
+of model produced using the two techniques.}
 
-To calculate the accuracy of the obtained architectural models, and answer the questions of the experiment, we used the 
+
+To calculate the accuracy of the \replaced{recovered}{obtained} architectural models, 
+and answer the questions of the experiment, we used the 
 Jaccard similarity coefficient, defined by the formula:
 
 \begin{center}
 	$Sj= \frac{a}{a+b+c}$
 \end{center}
 
-Here: $Sj$ is the coefficient of Jaccard; $a$= the number of common modules; $b$= number of modules in B but not in A; $c$= number of modules in A, but not in B. 
-In the experiment, model B was produced by a domain expert, while the model A was produced by participants in the experiment.
-
-Each participant prepared two models per session. In the first model, the participant applied only one technique 
-(\replaced[remark={Por que clustering e visualization s\~{a}o tratados como t\'{e}cnicas distintas?}]{either }{or} clustering software or software visualization). After obtaining the first model, the other technique was presented and 
-it was requested to produce a new model, based on the two techniques. So, it was possible to calculate the similarity of model produced using only one 
-technique and then compare the similarity of model produced using the two techniques.
+Here: $Sj$ is the coefficient of Jaccard; $a$= the number of common receovered 
+modules; $b$= number of modules recovered in B but not in A; $c$= number of recovered 
+modules in A, but not in B. In the experiment, model B was produced by a domain expert, while the model 
+A was produced by participants in the experiment.
 
 \subsection{Design}%
 
