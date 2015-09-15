@@ -14,7 +14,9 @@
   \usepackage{booktabs}
   \usepackage{changes}
   \usepackage{enumerate}
-
+%  \usepackage{subfigure}
+\usepackage{caption}
+\usepackage{subcaption}
 \begin{document}
 
 % Copyright
@@ -310,20 +312,15 @@ our study~\cite{Juristo_2010} using a similar setting.}
 %% the experiment was designed. This allows the execution of 
 %% other studies based on the same plan~\cite{Juristo_2010}.}
 
-\added[remark={seria importante descrever quais s\~{a}o 
-as vari\'{a}veis envolvidas, e quais fatores precisam / est\~{a}o 
-sendo controlados com esse design. como os grupos foram formados?}]{Figure~\ref{design_experimento} illustrates the experimental design}. Subjects were divided into two groups. Participants in Group 1 started the extraction in a Visual Basic system using the clustering technique. The results of this extraction was collected. Then were presented the second technique and requested to produce a second model, applying both techniques. Afterwards, the same procedure was applied to the Java systems, but on the reverse order, i.e, first using software visualization and then clustering. For the participants in group 2, the same procedure applied, but starting with the software visualization technique.
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.43\textwidth]{design_experimento}
-	\caption{Design of the experiment.}
-	\label{design_experimento}
-\end{figure}
-
-\subsubsection{Experiment objects}%
-
-The study uses four software systems, written in two programming languages, as follows: Visual Basic and Java. Table \ref{tabelaSistemasObjetos}  presents relevant information on the characteristics of each object of the experiment system. Systems A and B are legacy systems still operating in the University of Brasilia, and support the management of the academic routine of college students. Systems C and D have been developed on a new platform, in order to replace the systems written in Visual Basic. These systems deal with administrative university routines.
+The study \replaced{considered}{uses} four software systems, written in 
+two programming languages \replaced{(Visual Basic and Java).}{, as follows: Visual Basic and Java.} 
+Table \ref{tabelaSistemasObjetos}  presents relevant information on 
+the characteristics of each object of the experiment system. Systems A 
+and B are legacy systems still operating in the University of Brasilia, 
+and support the management of the academic routine of college students. 
+Systems C and D have been developed on a new platform, in order 
+to replace the systems written in Visual Basic. These systems 
+deal with administrative university routines.
 
 \begin{table}[h]
 	\centering
@@ -339,26 +336,66 @@ The study uses four software systems, written in two programming languages, as f
 	\end{tabular}
 \end{table}
 
-\subsubsection{Subject selection}%
-Participants in the experiment are system developers, with different levels of experience. A total of ten participants was selected. Subjects were divided into two groups randomly.
+%\subsubsection{Subject selection}%
 
-At the beginning of each session, participants were asked about the level of knowledge in important aspects in a architecture recovery process. Figure \ref {conhecimentoGrupo1} details the expertise of the participants in Group 1. The y-axis represents the percentage of professionals in the corresponding expertise level.
+\replaced{The Participants involved}{Participants} in the experiment are 
+system developers, with different levels of experience. A total of ten 
+participants was selected. Subjects were divided into two groups randomly.
+\added[remark={por que nao foi realizado antes das sessoes?}]{At the beginning of each session}, 
+participants were asked about the level of 
+knowledge in important aspects \replaced{releated to the}{in a} architecture recovery 
+process. Figure~\ref{fig:participantes}(a) and Figure~\ref{fig:participantes}(b) 
+detail the expertise of the participants in the first and second groups, respectively. 
+The y-axis represents the percentage of professionals in the corresponding expertise level.
 
-\begin{figure}[!h]
+\begin{figure*}[t!]
+ \begin{subfigure}[t]{0.5\textwidth}
 	\centering
-	\includegraphics[width=0.45\textwidth]{6_expertise_participantes_grupo_1_en}
+	\includegraphics[scale=0.25]{6_expertise_participantes_grupo_1_en}
 	\caption{Participants expertise in Group 1.}
-	\label{conhecimentoGrupo1}
-\end{figure}
+%	\label{conhecimentoGrupo1}
+ \end{subfigure}
+ ~
+ \begin{subfigure}[t]{0.5\textwidth}
+	\centering
+	\includegraphics[scale=0.25]{6_expertise_participantes_grupo_2_en}
+	\caption{Participants expertise in Group 2.}
+ \end{subfigure}
+\caption{Expertise of the participants.}
+\label{fig:participantes}
+\end{figure*}
 
-Figure \ref{conhecimentoGrupo2} details information about the level of knowledge of participants in Group 2.
+%Figure \ref{conhecimentoGrupo2} details information about the level of knowledge of 
+%participants in Group 2.
+
+%% \begin{figure}[!h]
+%% 	\centering
+%% 	\includegraphics[width=0.45\textwidth]{6_expertise_participantes_grupo_2_en}
+%% 	\caption{Participants expertise in Group 2.}
+%% 	\label{conhecimentoGrupo2}
+%% \end{figure*}
+
+\added[remark={seria importante descrever quais s\~{a}o 
+as vari\'{a}veis envolvidas, e quais fatores precisam / est\~{a}o 
+sendo controlados com esse design. como os grupos foram formados? 
+talvez uma leitura do artigo SoSyM ajude.}]{Figure~\ref{design_experimento} 
+illustrates the experimental design}. As explained, the subjects were divided into two groups. 
+Participants in Group 1 started the extraction in a Visual Basic system 
+using the clustering technique. The results of this extraction was collected. Then 
+\replaced{we}{were} presented the second technique and requested to produce a second model, 
+applying both techniques. Afterwards, the same procedure was applied to the Java systems, 
+but on the reverse order, i.e, first using software visualization and then clustering. 
+For the participants in group 2, the same procedure applied, but starting with the 
+software visualization technique.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.45\textwidth]{6_expertise_participantes_grupo_2_en}
-	\caption{Participants expertise in Group 2.}
-	\label{conhecimentoGrupo2}
+	\includegraphics[width=0.43\textwidth]{design_experimento}
+	\caption{Design of the experiment.}
+	\label{design_experimento}
 \end{figure}
+
+\subsubsection{Experiment objects}%
 
 
 \subsection{Execution}%
