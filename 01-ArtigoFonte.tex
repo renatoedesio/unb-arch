@@ -77,7 +77,7 @@ Renato Paiva, Genaína N. Rodrigues, Marcelo Ladeira,  Rodrigo Bonifacio\\
 
 \maketitle
 \begin{abstract}
-	Modernizing a legacy system is a costly process that requires deep understanding of the system architecture and its components. Without an understanding of the software architecture that will be rewritten, the entire process of reengineering can fail. When there is absence of architectural documents, it is important to have a recovery process of architecture that allows the complete understanding of the software. Such process involves mapping of source code entities in high-level models. Previous work using visualization and clustering techniques has been proposed and extensively used. However, their accuracy to reconstruct the architecture alone has shown to be not satisfactory enough. Thus, this work proposes to explore if an approach where visualization and clustering applied together can provide a higher accuracy on the software architecture recovery process. An experimental study was conducted to empirically evaluate our investigation. The results indicated a statistically significant increase in the accuracy of the models produced.
+	Modernizing a legacy system is a costly process that requires deep understanding of the system architecture and its components. Without an understanding of the software architecture that will be rewritten, the entire process of reengineering can fail. When there is absence of architectural documents, it is important to have a recovery process of architecture that allows the complete understanding of the software. Such process involves mapping of source code entities in high-level models. \replaced{Previous work using quasi-automatic and quasei-manual techniques for architecture recovery has been proposed and extensively used. However, there is still important improvements that need to be addressed based on this theme.}{Previous work using visualization and clustering techniques has been proposed and extensively used. However, their accuracy to reconstruct the architecture alone has shown to be not satisfactory enough.} Thus, this work proposes to explore if an approach where visualization and clustering applied together can provide a higher accuracy on the software architecture recovery process. An experimental study was conducted to empirically evaluate our investigation. The results indicated a statistically significant increase in the accuracy of the models produced.
 \end{abstract}
 
 
@@ -136,19 +136,19 @@ In order to evolve a software, it is paramount to understand its architecture. H
 
 The required effort to manually recover a system architecture is proportional to the the size and complexity of its source code. This is particular more costly for large software systems, prone to every sort of errors \cite{zapalowski_revealing_2014}. As a result, the study of methods and tools to extract the software systems architecture is fundamental to guarantee a faster and more accurate process. By these means, costs and risks in the process of architecture recovery should be diminished.
 
-In the context of architecture recovery techniques, a widely used technique is software architecture visualization  \cite {ghanam_survey_2008, teyseyre_overview_2009, lanza_codecrawler-lessons_2003, Feijs_loe}. The basis of the software visualization underlies on the creation of an image of the system via visual objects  \cite{teyseyre_overview_2009}. Using such abstraction, it is possible to obtain a new view of the software, which allows exploring different concepts and clearer understanding of the software system structure.
+In the context of architecture recovery techniques, a widely used technique is software architecture visualization  \cite {ghanam_survey_2008, teyseyre_overview_2009, lanza_codecrawler-lessons_2003, Feijs_loe}. \added{This quasi-manual techniques reconstruct the software architecture by manually abstracting low-level knowledge, due to interactive and expressive visualization tools \cite{ducasse_software_2009}.} The basis of the software visualization underlies on the creation of an image of the system via visual objects  \cite{teyseyre_overview_2009}. Using such abstraction, it is possible to obtain a new view of the software, which allows exploring different concepts and clearer understanding of the software system structure.
 
 Wettel \textit{et al.} \cite{wettel_software_2011} carried out a controlled experiment to investigate the efficacy and effectiveness of the CodeCity software visualization tool in the process of understanding a software system structure. Results pointed out that, using such tool, it was possible to obtain an accuracy of 24.26\% and a reduction of 12.01\% in the execution time of a certain number of tasks, when compared to an understanding process carried out via a manual inspection of the source code.
 
-Despite the improvement on the results obtained through software visualization techniques, most of the times, the efficiency of the methods or tools rely on the ability of the analyst in charge of the software architecture recovery. As a result, the accuracy of the results is bound by subjective criteria most of the times. In order to fill in this gap, various research work has been devoted to automate the architecture recovery process. 
+Despite the improvement on the results obtained through \replaced{quasei-manual techniques}{software visualization techniques}, most of the times, the efficiency of the methods or tools rely on the ability of the analyst in charge of the software architecture recovery. As a result, the accuracy of the results is bound by subjective criteria most of the times. In order to fill in this gap, various research work has been devoted to automate the architecture recovery process. 
 
-Another technique to recover a software system architecture consists on clustering methodologies \cite{shtern_clustering_2012, Jain_Murty_1999, Wiggerts, mitchell_heuristic_2002}. Such technique is used in various fields of research to describe methods to cluster unclassified data.  In the context of architecture recovery, clustering aims at grouping software artifacts in significant modules, leading towards an understanding of the software system structure in a higher abstraction level \cite{shtern_clustering_2012}.
+Another technique to recover a software system architecture consists on clustering methodologies \cite{shtern_clustering_2012, Jain_Murty_1999, Wiggerts, mitchell_heuristic_2002}. \added{This is a quasi-automatic technique,  whose goal is to identify groups of objects whose members are similar in some way \cite{ducasse_software_2009}}.  Such technique is used in various fields of research to describe methods to cluster unclassified data.  In the context of architecture recovery, clustering aims at grouping software artifacts in significant modules, leading towards an understanding of the software system structure in a higher abstraction level \cite{shtern_clustering_2012}.
 
 However, to decompose a software system in higher-level structures in a coherent and logic coupling, is an inherently difficult task.  Due to the usual sparse set of data in a source code and the various computational factors involved in a software system, many solutions are only suboptimal and do not represent the real software architecture \cite {mitchell_heuristic_2002}.  On the other hand, results of such technique are still helpful as they provide as a result a view of the software system decomposition, instead of reconstructing it from scratch. Further refinements are then required in order to have an accurate architecture recovery \cite{tzerpos_comprehension-driven_2001}.
 
-Given the inaccuracy inherent to architecture recovery techniques, one question comes out:  Is it possible to obtain a more accurate software architecture recovery process? We propose to investigate this question by merging both visualization and clustering techniques into one   architecture recovery process. We postulate that clustering and visualization  techniques are complementary in the sense that they provide different levels of software architecture abstraction. Our investigation is performed on a controlled experiment in a industrial environment, where participants are software analysts and developers working on software systems developed in Java and Visual Basic programming languages. Our results show a statistically significant improvement in the accuracy of the models produced from our proposal compared to the techniques used alone.
+Given the inaccuracy inherent to architecture recovery techniques, one question comes out:  Is it possible to obtain a more accurate software architecture recovery process? We propose to investigate this question by merging both \replaced{quasi-manual and quasi-automatic techniques}{visualization and clustering techniques} into one  architecture recovery process. We postulate that  \replaced{quasi-manual and quasi-automatic techniques, such as software visualization and clustering, respectively,} {clustering and visualization  techniques} are complementary in the sense that they provide different levels of software architecture abstraction. Our investigation is performed on a controlled experiment in a industrial environment, where participants are software analysts and developers working on software systems developed in Java and Visual Basic programming languages. Our results show a statistically significant improvement in the accuracy of the models produced from our proposal compared to the techniques used alone.
 
-The remaining sections of the paper are structured as follows: Section 2 presents the background concepts regarding software architecture visualization and clustering techniques. Section 3 highlights the inaccuracies of such techniques and the principles that drive our investigation. Section 4 is the main section where we present and evaluate the experimental study we conducted with the software development group in the Data Processing Center at University of Brasilia. In Section 5 we present the related work and finally, in Section 6 we conclude our work and present the future directions we plan to pursue.
+The remaining sections of the paper are structured as follows: Section 2 presents related work regarding software architecture visualization and clustering techniques. Section 3 highlights the inaccuracies of such techniques and the principles that drive our investigation. Section 4 is the main section where we present and evaluate the experimental study we conducted with the software development group in the Data Processing Center at University of Brasilia. In Section 6 we conclude our work and present the future directions we plan to pursue.
 
 
 \section{RELATED WORK}%
@@ -265,12 +265,12 @@ Goal Question Metric (GQM) approach, as described in Table~\ref{tab:RecoveryTech
 	\label{tab:RecoveryTechniques}
 \end{table}
 
-The underlying research questions of the experiment are as follows: 
+The underlying research \replaced{question}{question}s \added {for this} \deleted{the}experiment \replaced{is}{are} as follows: \\ 
 
 \begin{enumerate}[(RQ1)]
 \item Does the use of software visualization technique, along with the clustering technique, increases the accuracy of the architectural model produced, in comparison with using only one of the techniques? 
-\item \added[remark={temos interesse nessa quest\~{a}o de pesquisa?}]{Does the results are affected by the programming language used in the object systems?}
-\item Can the order of execution of the techniques influence the results? \\
+\item \deleted{Does the results are affected by the programming language used in the object systems?}
+\item \deleted{Can the order of execution of the techniques influence the results?} \\
 \end{enumerate} 
 
 Each participant \added{recovered the architecture} \replaced{by 
@@ -432,39 +432,6 @@ Another tool used for viewing the source, and available to the participants of t
 
 The Bunch tool \cite{mitchell_heuristic_2002} was used for clustering approach as the tool is open source and has an intuitive graphical interface, as shown in Figure . Participants in the experiment were instructed to choose between the available algorithms and run the clustering process in the system under analysis. Participants can change the input parameters of the algorithms and run the clustering tool as often as they felt necessary. The process outputs is a file containing the modules automatically mapped by the selected algorithm. Through the output of the analysis, the participants comprised the architectural model of the system under analysis.
 
-\subsection{Analysis}%
-The analysis was performed based on a plan Goal Question Metric (GQM), described in Table \ref{tab:RecoveryTechniques}.
-
-\begin{table}
-	\centering
-	\caption{Definition of the accuracy evaluation Software Architecture Recovery Techniques.}
-	\resizebox{\columnwidth}{!}{%
-	\begin{tabular}{@{}ll@{}}
-		\toprule
-		\textbf{Purpose}   & Evaluate    \\
-		\textbf{Issue}     & accuracy of the models produced  \\
-		\textbf{Object}    & architecture recovery using visualization and clustering techinques\\
-		\textbf{Viewpoint} & software architect /application engineer\\
-		\textbf{Context}   & University of Brasilia Academic Management Systems		              \\ \bottomrule
-	\end{tabular}
-	}
-	\label{tab:RecoveryTechniques}
-\end{table}
-
-The underlying research questions the experiment are as follows: \\
-RQ1: Does the use of software visualization technique, along with the clustering technique, increases the accuracy of the architectural model produced, in comparison with using only one of the techniques? \\
-RQ2: Does the results are affected by the programming language used in the object systems?\\
-RQ3: Can the order of execution of the techniques influence the results? \\
-
-\subsection{Metrics}%
-To calculate the accuracy of the obtained architectural models, and answer the questions of the experiment, we used the Jaccard similarity coefficient, defined by the formula:
-\begin{center}
-	$Sj= \frac{a}{a+b+c}$
-\end{center}
-
-Here: $Sj$ is the coefficient of Jaccard; $a$= the number of common modules; $b$= number of modules in B but not in A; $c$= number of modules in A, but not in B. In the experiment, model B was produced by a domain expert, while the model A was produced by participants in the experiment.
-
-Each participant prepared two models per session. In the first model, the participant applied only one technique (or clustering software or software visualization). After obtaining the first model, the other technique was presented and it was requested to produce a new model, based on the two techniques. So, it was possible to calculate the similarity of model produced using only one technique and then compare the similarity of model produced using the two techniques.
 
 \subsection{Results}%
 
@@ -511,7 +478,7 @@ Analyzing the data for the systems in Visual Basic, it is possible to conclude t
 
 After these analyzes, it is possible to conclude that using two techniques produced better results than using only one technique in a software architecture recovery process. Thus, it is possible to answer RQ1, where it is questioned whether the use of both techniques increases the accuracy of the obtained architectural models. Given the above results, it is possible to say that the use of both techniques had a positive impact on the accuracy of the models produced, since all the results indicated an improvement in the accuracy of the models when used the two techniques together.
 
-To answer RQ2, we performed an analysis of the impact on the programming language on the accuracy of the results.  From Table \ref{tabelaOutrasAnalises2} it can be seen that in Visual Basic systems, the average accuracy of the models produced was approximately 60\%. In systems written in Java, the accuracy was approximately 64\%. These values represent the total amount of analyses performed for each language. Since each language was twice analysed in each group, then N equal 20, in this case.
+\replaced{To enhance the results obtained, further analyzes were performed. First, }{To answer RQ2,}, we performed an analysis of the impact on the programming language on the accuracy of the results.  From Table \ref{tabelaOutrasAnalises2} it can be seen that in Visual Basic systems, the average accuracy of the models produced was approximately 60\%. In systems written in Java, the accuracy was approximately 64\%. These values represent the total amount of analyses performed for each language. Since each language was twice analysed in each group, then N equal 20, in this case.
 
 \begin{table}[h]
 	\centering
@@ -527,7 +494,7 @@ To answer RQ2, we performed an analysis of the impact on the programming languag
 	}
 \end{table}
 
-To calculate the significance of the means difference and determine if the programming language affects the recovery process, we conducted a paired t-test. The result can be seen in Table \ref{table:test_t3}. Through data analysis, we conclude that there is no significant difference between the mean values of the systems in Visual Basic (Mean= 0.605,  Std. Deviation= 0.138) and Java systems (Mean= 0.644,  Std. Deviation= 0.153); t(19)= -1.867, p= 0.077. Thus it is possible to answer RQ2: given the outcome, we can conclude that, with 95\% of confidence level, the programming languages had no statistically significant effect on the results, since Sig(2-tailed) value is greater than 0.05. So, the difference of means is in the interval (-0.082; 0.004), which includes 0.
+To calculate the significance of the means difference and determine if the programming language affects the recovery process, we conducted a paired t-test. The result can be seen in Table \ref{table:test_t3}. Through data analysis, we conclude that there is no significant difference between the mean values of the systems in Visual Basic (Mean= 0.605,  Std. Deviation= 0.138) and Java systems (Mean= 0.644,  Std. Deviation= 0.153); t(19)= -1.867, p= 0.077. \replaced{Given the outcome,}{Thus it is possible to answer RQ2: given the outcome,} we can conclude that, with 95\% of confidence level, the programming languages had no statistically significant effect on the results, since Sig(2-tailed) value is greater than 0.05. So, the difference of means is in the interval (-0.082; 0.004), which includes 0.
 
 \begin{table}[h]
 	\centering
@@ -544,7 +511,7 @@ To calculate the significance of the means difference and determine if the progr
 	}
 \end{table}
 
-Finally, it is possible to analyze if the order of the recovery technique affects the results. This analysis is useful to check whether starting from visualization or clustering in our process influences the accuracy of the results. Table \ref{tabelaOutrasAnalises4} details the descriptive results of the data. When using software visualization and then using clustering, the accuracy of the models obtained was approximately 77\%. Moreover, using first the clustering technique then software visualization technique, the accuracy of the models obtained was approximately 72\%.
+Finally, it is possible to analyze if the order of the recovery technique affects the results. \deleted{This analysis is useful to check whether starting from visualization or clustering in our process influences the accuracy of the results}. Table \ref{tabelaOutrasAnalises4} details the descriptive results of the data. When using software visualization and then using clustering, the accuracy of the models obtained was approximately 77\%. Moreover, using first the clustering technique then software visualization technique, the accuracy of the models obtained was approximately 72\%.
 
 \begin{table}[h]
 	\centering
@@ -577,7 +544,7 @@ To check for the difference between the means, it was conducted a  paired t-test
 	}
 \end{table}
 
-Given the above, it is possible to answer RQ3, whether the order of the technique applied can affect the results. Facing the results, we can say that there is no statistical evidence to say that the order of the approach had an influence on the results, since Sig(2-tailed) value is greater than 0.05 resulting the interval (-0.023, 0.109) which includes 0.
+\deleted{Given the above, it is possible to answer RQ3, whether the order of the technique applied can affect the results.} Facing the results, we can say that there is no statistical evidence to say that the order of the approach had an influence on the results, since Sig(2-tailed) value is greater than 0.05 resulting the interval (-0.023, 0.109) which includes 0.
 
 \subsection{Internal validity}%
 
