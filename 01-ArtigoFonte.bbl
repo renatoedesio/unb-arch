@@ -15,6 +15,14 @@ L.~Feijs and R.~De~Jong.
 \newblock 3d visualization of software architectures.
 \newblock {\em Commun. ACM}, 41(12):73--78, Dec. 1998.
 
+\bibitem{Garcia:ASE2013}
+J.~Garcia, I.~Ivkovic, and N.~Medvidovic.
+\newblock A comparative analysis of software architecture recovery techniques.
+\newblock In E.~Denney, T.~Bultan, and A.~Zeller, editors, {\em 2013 28th
+  {IEEE/ACM} International Conference on Automated Software Engineering, {ASE}
+  2013, Silicon Valley, CA, USA, November 11-15, 2013}, pages 486--496. {IEEE},
+  2013.
+
 \bibitem{ghanam_survey_2008}
 Y.~Ghanam and S.~Carpendale.
 \newblock A survey paper on software architecture visualization.
@@ -103,12 +111,6 @@ A.~Teyseyre and M.~Campo.
 \newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
   15(1):87--105, Jan 2009.
 
-\bibitem{tzerpos_comprehension-driven_2001}
-V.~Tzerpos and R.~Holt.
-\newblock Accd: an algorithm for comprehension-driven clustering.
-\newblock In {\em Reverse Engineering, 2000. Proceedings. Seventh Working
-  Conference on}, pages 258--267, 2000.
-
 \bibitem{Tzerpos_vassilios}
 V.~Tzerpos and R.~C. Holt.
 \newblock Acdc: An algorithm for comprehension-driven clustering.
@@ -116,23 +118,10 @@ V.~Tzerpos and R.~C. Holt.
   Engineering (WCRE'00)}, WCRE '00, pages 258--, Washington, DC, USA, 2000.
   IEEE Computer Society.
 
-\bibitem{wettel_software_2011}
-R.~Wettel, M.~Lanza, and R.~Robbes.
-\newblock Software systems as cities: a controlled experiment.
-\newblock In {\em Proceedings of the 33rd International Conference on Software
-  Engineering}, pages 551--560. {ACM}, 2011.
-
 \bibitem{Wiggerts}
 T.~Wiggerts.
 \newblock Using clustering algorithms in legacy systems remodularization.
 \newblock In {\em Reverse Engineering, 1997. Proceedings of the Fourth Working
   Conference on}, pages 33--43, Oct 1997.
-
-\bibitem{zapalowski_revealing_2014}
-V.~Zapalowski, I.~Nunes, and D.~J. Nunes.
-\newblock Revealing the relationship between architectural elements and source
-  code characteristics.
-\newblock In {\em Proceedings of the 22nd International Conference on Program
-  Comprehension}, pages 14--25. {ACM}, 2014.
 
 \end{thebibliography}

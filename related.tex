@@ -1,0 +1,19 @@
+\section{RELATED WORK}\label{sec:related}%
+
+
+%\deleted[remark={levar para a secao de trabalhos relacionados}]{Wettel \textit{et al.} \cite{wettel_software_2011} carried out a controlled experiment to investigate the 
+%efficacy and effectiveness of the CodeCity software visualization tool in the process of understanding a software system structure. 
+%Results pointed out that, using such tool, it was possible to obtain an accuracy of 24.26\% and a reduction of 12.01\% in the execution time of a 
+%certain number of tasks, when compared to an understanding process carried out via a manual inspection of the source code.}
+
+The maintenance and evolution of systems is expensive and involves a high risk, which is due to the difficulty of understanding the system architecture. To solve this problem, several approaches for the recovery of software architecture have been proposed. Ducasse et al. in \cite{ducasse_software_2009} present a taxonomy of approaches to architecture recovery, detailing information necessary for recovery, such as: what are the stakeholders’ goals, how does the general reconstruction proceed, what are the available sources of information, based on this, which techniques can we apply, and, finally, what kind of knowledge does the process provide.
+
+Software visualization provides complementary perspectives on the analyzed system. Through the use of software visualization, it is possible to explore the software architecture through representations based on diagrams "box-line", interconnected graphs, dependency matrices etc. These artifacts represent interactions between the modules in the system and can combine different metrics to increase the level of information of each diagram \cite{ lungu_lanza_2007}.
+
+Lanza in \cite {lanza_codecrawler-lessons_2003} presents a tool that focuses on the software visualization. This tool supports reverse engineering through combinations of metrics and software visualization techniques. The author makes use of the concepts of polymetric views to facilitate the understanding of the software. In this type of view it is possible to have notions of how, when and what metric a specific class was represented. Figure \ref{printScreenCodeCrawler} highlight the main screen of CodeCrawler tool.
+
+The works of Sangal \cite{Sangal_2005} and Tekinerdogan \cite{Tekinerdogan_2009}  are focused on representation of the source code in graphs and matrix structured dependencies, to create the system architecture of understanding of software. By analyzing such artifacts extracted through code static analysis, they show how to detect structural elements of the system and get an understanding of its architecture.
+
+Regarding the use of data clustering for understanding software systems, the tool developed by Mancoridis \textit {et al.} \cite {Mancoridis_1999}  has a notable highlight. Through that tool it is possible to automatically create breakdowns of the system structure in significant subsystems. The processed data can provide structural information to developers, facilitating the understanding of software components, their interfaces and interconnections. The tool provides a complete environment for the clustering process; implemented through a tool with a graphical interface and made available for free, with operating manual and sample code.
+
+Another approach to the understanding of software systems by using data clustering techniques was presented by Tzerpos \textit{et al.} \cite {Tzerpos_vassilios}. In their study, it is presented a clustering algorithm that discovers clusters that follow patterns that are commonly observed in decompositions of large software systems that were prepared manually by their system architects.  Also, the algorithm assign meaningful names for cluster generated. 
