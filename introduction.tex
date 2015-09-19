@@ -1,0 +1,71 @@
+\section{Introduction}
+
+Software modernization in an activity that requires a significant understanding 
+of the architecture. Nevertheless, this is a challenge because usually there is a 
+lack of architecture information and thus some reverse engineering practices 
+must take place. Moreover, the ability to mine relevant information from 
+execution traces tend to quickly become large and unmanageable and, for this reason, 
+it is necessary to filter part of those traces and extract relevant information 
+for the particular understanding of the task being performed \cite{canfora_achievements_2011}. 
+In most cases, understanding the software structure is also a challenging task due to the lack of 
+architecture specification documents, particularly w.r.t legacy systems.  
+If there is no such specification available or if it is out-of-date, a software architecture recovery 
+process must take place.
+%The required effort to manually recover a system architecture is proportional to the the size and complexity of its source code. 
+%This is particular more costly for large software systems, prone to every sort of errors \cite{zapalowski_revealing_2014}. 
+As a result, the study of methods and tools to extract the software systems architecture is fundamental to guarantee a faster and more accurate process. 
+%By these means, costs and risks in the process of architecture recovery should be diminished.
+
+Software visualization is a widely used technique for architecture recovering~\cite{ghanam_survey_2008, teyseyre_overview_2009, lanza_codecrawler-lessons_2003, Feijs_loe}. 
+\added{They are \emph{semi-automatic} techniques that reconstruct the software architecture by manually abstracting low-level knowledge, 
+due to interactive and expressive visualization tools \cite{ducasse_software_2009}.} The basis of the software visualization underlies 
+on the creation of a representation of the system via visual elements~\cite{teyseyre_overview_2009}. 
+Using such abstraction, it is possible to obtain a new view of the software, which allows exploring different concepts and 
+clearer understanding of the software system structure.
+
+Despite the improvement on the results obtained through \replaced{semi-automatic techniques}{software visualization techniques}, most of the times, 
+the efficiency of the methods or tools rely on the ability of the analyst in charge of the software architecture recovery. As a result, the accuracy of the results,\added{particularly 
+to derive the modular decomposition of the software}, is bound by subjective criteria most of the times. In order to fill in this gap, 
+various research work has been devoted to automate the architecture recovery process. For instance, \added{software clusterization 
+is an automatic technique} to recover a software system architecture\cite{shtern_clustering_2012, Jain_Murty_1999, Wiggerts, mitchell_heuristic_2002}. 
+%\added{This technique assists software architects to identify groups of objects (such as a modular 
+%decomposition of a system) whose members are similar in some way \cite{ducasse_software_2009}}.  
+%Such technique is used in various fields 
+%of research to describe methods to cluster unclassified data.  
+In the context of architecture recovery, clustering techiniques aims at grouping software artifacts in significant modules, leading towards an understanding of 
+the software system structure in a higher abstraction level \cite{shtern_clustering_2012}.
+
+However, although both approaches for architecture recovering have been widely discussed in the literature, 
+there is no empirical study that investigates how each technique complements each other. 
+In this paper we 
+carried out an experiment that aims at understanding how the combination of both approaches improve 
+the accuracy of the models obtained from an architectural recovery. The contributions of the paper 
+are two fold 
+
+\begin{itemize}
+\item It presents the design, execution, and main findings of an empirical study that 
+investigates the benefits of combining well-known semi-automatic visualization and clustering 
+techniques for architecture recovering. 
+
+\item It reports that the combination of the selected approaches improves the accuracy of the 
+resulting models--- that improvement ranges from 19\% to 30\%, depending on 
+the visualization and programming language techinique we used in our experiment.   
+
+\end{itemize}
+
+% However, to decompose a software system in higher-level structures in a coherent and logic coupling, 
+% is an inherently difficult task.  Due to the usual sparse set of data in a source code and the various 
+% computational factors involved in a software system, many solutions are only suboptimal and do not represent 
+% the real software architecture \cite {mitchell_heuristic_2002}.  On the other hand, results of such technique are 
+% still helpful as they provide as a result a view of the software system decomposition, instead of reconstructing it from scratch. 
+% Further refinements are then required in order to have an accurate architecture recovery \cite{tzerpos_comprehension-driven_2001}.
+
+%Given the inaccuracy inherent to architecture recovery techniques, one question comes out:  Is it possible to obtain a more accurate software architecture recovery process? 
+%We propose to investigate this question by merging both \replaced{quasi-manual and quasi-automatic techniques}{visualization and clustering techniques} into one  architecture 
+%recovery process. We postulate that  \replaced{quasi-manual and quasi-automatic techniques, such as software visualization and clustering, respectively,} {clustering and visualization  techniques} 
+%are complementary in the sense that they provide different levels of software architecture abstraction. Our investigation is performed on a controlled 
+%experiment in a industrial environment, where participants are software analysts and developers working on software systems developed in Java and Visual Basic programming languages. 
+%Our results show a statistically significant improvement in the accuracy of the models produced from our proposal compared to the techniques used alone.
+
+The remaining sections of the paper are structured as follows: Section 2 presents related work regarding software architecture visualization and clustering techniques. Section 3 highlights the inaccuracies of such techniques and the principles that drive our investigation. Section 4 is the main section where we present and evaluate the experimental study we conducted with the software development group in the Data Processing Center at University of Brasilia. In Section 6 we conclude our work and present the future directions we plan to pursue.
+
