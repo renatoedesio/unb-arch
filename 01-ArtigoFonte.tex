@@ -12,12 +12,16 @@
   \usepackage{makecell}
   \usepackage{cite}
   \usepackage{booktabs}
-  \usepackage{changes}
+  %\usepackage{changes}
+  \usepackage[final]{changes}
   \usepackage{enumerate}
 %  \usepackage{subfigure}
 \usepackage{caption}
 \usepackage{subcaption}
+
 \begin{document}
+
+\hyphenation{semi-au-to-mat-ic}
 
 % Copyright
 \setcopyright{acmcopyright}
@@ -27,7 +31,6 @@
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
-
 
 % DOI
 \doi{http://dx.doi.org/xx.xxxx/xxxxxxx.xxxxxxx}
@@ -77,7 +80,7 @@ Renato Paiva, Genaína N. Rodrigues, Marcelo Ladeira,  Rodrigo Bonifacio\\
 
 \maketitle
 \begin{abstract}
-	Modernizing a legacy system is a costly process that requires deep understanding of the system architecture and its components. Without an understanding of the software architecture that will be rewritten, the entire process of reengineering can fail. When there is absence of architectural documents, it is important to have a recovery process of architecture that allows the complete understanding of the software. Such process involves mapping of source code entities in high-level models. \replaced{Previous work using quasi-automatic and quasei-manual techniques for architecture recovery has been proposed and extensively used. However, there is still important improvements that need to be addressed based on this theme.}{Previous work using visualization and clustering techniques has been proposed and extensively used. However, their accuracy to reconstruct the architecture alone has shown to be not satisfactory enough.} Thus, this work proposes to explore if an approach where visualization and clustering applied together can provide a higher accuracy on the software architecture recovery process. An experimental study was conducted to empirically evaluate our investigation. The results indicated a statistically significant increase in the accuracy of the models produced.
+Modernizing a legacy system is a costly process that requires deep understanding of the system architecture and its components. Without an understanding of the software architecture that will be rewritten, the entire process of reengineering can fail. When there is absence of architectural documents, it is important to have a recovery process of architecture that allows the complete understanding of the software. Such process involves mapping of source code entities in high-level models. \replaced{Previous work using quasi-automatic and quasei-manual techniques for architecture recovery have been proposed and extensively used. However, there are still important improvements that need to be addressed on this arena.}{Previous work using visualization and clustering techniques has been proposed and extensively used. However, their accuracy to reconstruct the architecture alone has shown to be not satisfactory enough.} Thus, this work proposes to explore if an approach where visualization and clustering applied together can provide a higher accuracy on the software architecture recovery process. An experimental study was conducted to empirically evaluate our investigation. The results indicated a statistically significant increase in the accuracy of the models produced.
 \end{abstract}
 
 
@@ -133,7 +136,7 @@ Renato Paiva, Genaína N. Rodrigues, Marcelo Ladeira,  Rodrigo Bonifacio\\
 
 \input{introduction.tex}
 
-\section{RELATED WORK}%
+\section{RELATED WORK}\label{sec:related}%
 
 
 %\deleted[remark={levar para a secao de trabalhos relacionados}]{Wettel \textit{et al.} \cite{wettel_software_2011} carried out a controlled experiment to investigate the 
@@ -154,7 +157,7 @@ Regarding the use of data clustering for understanding software systems, the too
 Another approach to the understanding of software systems by using data clustering techniques was presented by Tzerpos \textit{et al.} \cite {Tzerpos_vassilios}. In their study, it is presented a clustering algorithm that discovers clusters that follow patterns that are commonly observed in decompositions of large software systems that were prepared manually by their system architects.  Also, the algorithm assign meaningful names for cluster generated. 
 
 
-\section{RATIONALE ON THE COMBINATION BETWEEN VISUALIZATION AND DATA CLUSTERING}%
+\section{RATIONALE ON THE COMBINATION BETWEEN VISUALIZATION AND DATA CLUSTERING}\label{sec:rationale}%
 
 In many cases, the analyst, with some knowledge of a system, can perform an analysis of the results and create a concise final model. However, especially for complex systems, it is necessary to use strategies for interpretation of results. Such strategies involve the observation of repeated patterns and identification of architectural violations in the source code.
 
@@ -231,7 +234,7 @@ To illustrate a violation on an architecture,  we will use the same results of F
 
 Such violations can be found through an analysis of the artifacts produced by software visualization. As an example, take into account the dependency structure matrix shown previously in Figure \ref{3_exemploMatrizViolada}. Through observation of the DSM, it is possible to note a relationship exists between layers, and each layer depends on the upper layers. However, this relationship is violated by layer "Date" (4), since it uses resources of the layer  "View" (1), characterizing an architectural violation. Once the violation is detected, it should be treated as failure and, if necessary, modify the data set for the clustering process, so that the relationship is not considered. Thus, avoiding the production of wrong models that may affect the interpretation of the results.
 
-\section{EXPERIMENTAL STUDY}
+\section{EXPERIMENTAL STUDY}\label{sec:experimental}
 
 \added{The empirical} \deleted{Empirical} research presented in this \deleted{experimental} study uses a quantitative approach, in which the objective of the research 
 is to obtain a numerical relationship between several variables or alternatives analysis. The goal of the experiment is to evaluate the use of software visualization and data 
@@ -258,8 +261,12 @@ The underlying research \replaced{question}{question}s \added {for this} \delete
 
 \begin{enumerate}[(RQ1)]
 \item Does the use of software visualization technique, along with the clustering technique, increases the accuracy of the architectural model produced, in comparison with using only one of the techniques? 
-\item \deleted{Does the results are affected by the programming language used in the object systems?}
-\item \deleted{Can the order of execution of the techniques influence the results?} \\
+ \deleted{
+ \item Are the results affected by the programming language used in the object systems?
+ }
+\deleted{
+\item Can the order of execution of the techniques influence the results?
+}
 \end{enumerate} 
 
 Each participant \added{recovered the architecture} \replaced{by 
@@ -557,7 +564,7 @@ Second, an analysis was performed to verify if programming language can affect t
 Finally, we observed that the order of execution of the techniques does not significantly affect the results. This indicates that there is no specific order for the application of the techniques in the approach. This was also confirmed by the feedback from participants. When asked about the preference of the order of execution of techniques, some preferred to start with clustering, while others, with the visualization. Thus, the execution of techniques can happen in a subjective way that best meets the needs of the responsible for the recovery of architecture.
 
 
-\section{CONCLUSION}
+\section{CONCLUSION}\label{sec:conclusion}
 One of the factors that can influence the success or failure of a process of legacy system modernization is the understanding of its architecture. In this sense, the time taken to recover these concepts is as important as the time spent in planning the new system. This is due to the fact that, for a complete understanding of a legacy system, the first step is to understand its architecture, because this is the base that supports all system features. Thus, for the architecture recovery process as complete and accurate as possible, it is essential the use of different techniques.
 
 In this context, the use of software visualization techniques for analysis and recovery of a system architecture is essential, since it allows greater flexibility to the process of modernization. Through this technique, it is possible to obtain a compact representation of the entire structure of the source code. The various aspects of the software implemented in several lines of code may be represented by a single diagram, which summarizes all this complexity.
