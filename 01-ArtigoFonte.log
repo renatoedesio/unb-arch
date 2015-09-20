@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 16:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,24 +700,13 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 82.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 131.
-
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ae/omsaer.fd
-File: omsaer.fd 1999/12/27
-)
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
-
 Overfull \hbox (4.94855pt too wide) in paragraph at lines 136--137
 \T1/aer/m/n/9 Software Ar-chi-tec-ture Re-cov-ery; Soft-ware Vi-su-al-iza-tion;
  Data
  []
 
-(./introduction.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(./introduction.tex [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updma
+p/pdftex.map}
 
 
 ]) (./related.tex) (./rationale.tex
@@ -725,49 +714,40 @@ Overfull \hbox (1.35223pt too wide) in paragraph at lines 1--1
 \secfnt BE-TWEEN VI-SU-AL-IZA-TION AND DATA
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 11.
-
-[2]
-<images/exemplo_comparacao_modelos_en.png, id=18, 577.15625pt x 572.1375pt>
+<images/exemplo_comparacao_modelos_en.png, id=14, 577.15625pt x 572.1375pt>
 File: images/exemplo_comparacao_modelos_en.png Graphic file (type png)
 
 <use images/exemplo_comparacao_modelos_en.png>
 Package pdftex.def Info: images/exemplo_comparacao_modelos_en.png used on input
- line 33.
-(pdftex.def)             Requested size: 216.71631pt x 214.83038pt.
-
-<images/3_exemploMatrizViolada_en.jpg, id=19, 399.4925pt x 231.86626pt>
-File: images/3_exemploMatrizViolada_en.jpg Graphic file (type jpg)
-
-<use images/3_exemploMatrizViolada_en.jpg>
-Package pdftex.def Info: images/3_exemploMatrizViolada_en.jpg used on input lin
-e 45.
-(pdftex.def)             Requested size: 211.67908pt x 122.86021pt.
+ line 28.
+(pdftex.def)             Requested size: 151.20154pt x 149.88715pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[2] <images/3_exemploMatrizViolada_en.jpg, id=18, 399.4925pt x 231.86626pt>
+File: images/3_exemploMatrizViolada_en.jpg Graphic file (type jpg)
+
+<use images/3_exemploMatrizViolada_en.jpg>
+Package pdftex.def Info: images/3_exemploMatrizViolada_en.jpg used on input lin
+e 40.
+(pdftex.def)             Requested size: 151.20154pt x 87.75629pt.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 53.
+               Default added (so using `tbp') on input line 48.
 
-<images/exemplo_comparacao_modelos_2_en.png, id=20, 577.15625pt x 572.1375pt>
-File: images/exemplo_comparacao_modelos_2_en.png Graphic file (type png)
+) (./experiment.tex
+Overfull \hbox (3.27618pt too wide) in paragraph at lines 46--54
+ [][] 
+ []
 
-<use images/exemplo_comparacao_modelos_2_en.png>
-Package pdftex.def Info: images/exemplo_comparacao_modelos_2_en.png used on inp
-ut line 71.
-(pdftex.def)             Requested size: 216.71631pt x 214.83038pt.
-) (./experiment.tex [3 <./images/exemplo_comparacao_modelos_en.png (PNG copy)> 
-<./images/3_exemploMatrizViolada_en.jpg> <./images/exemplo_comparacao_modelos_2
-_en.png>]
-<images/6_expertise_participantes_grupo_1_en.jpg, id=24, 873.2625pt x 427.5975p
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./images/exemplo_comparacao_modelos_en.png (PNG copy)> <./images/3_exemploM
+atrizViolada_en.jpg>]
+<images/6_expertise_participantes_grupo_1_en.jpg, id=23, 873.2625pt x 427.5975p
 t>
 File: images/6_expertise_participantes_grupo_1_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_1_en.jpg>
@@ -775,7 +755,7 @@ Package pdftex.def Info: images/6_expertise_participantes_grupo_1_en.jpg used o
 n input line 65.
 (pdftex.def)             Requested size: 218.31508pt x 106.89911pt.
 
-<images/6_expertise_participantes_grupo_2_en.jpg, id=25, 873.2625pt x 427.5975p
+<images/6_expertise_participantes_grupo_2_en.jpg, id=24, 873.2625pt x 427.5975p
 t>
 File: images/6_expertise_participantes_grupo_2_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_2_en.jpg>
@@ -792,55 +772,45 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 118.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Overfull \hbox (1.69907pt too wide) in paragraph at lines 151--152
-\T1/aer/m/n/9 tech-nique us-ing ei-ther a semi-automatic de-com-po-si-tion base
-d
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[][]\T1/aer/m/n/9 The re-sult-ing mod-els are avail-able at
  []
 
 
-Overfull \hbox (6.82924pt too wide) in paragraph at lines 151--152
-\T1/aer/m/n/9 on soft-ware vi-su-al-iza-tion or an au-to-matic de-com-po-si-tio
-n based
- []
-
-[4]
-Overfull \hbox (2.20322pt too wide) in paragraph at lines 192--205
+Overfull \hbox (2.20322pt too wide) in paragraph at lines 189--202
 []\T1/aer/m/n/9 We also anal-ysed whether these re-sults are sta-tis-ti-cally m
 ean-
  []
 
+[4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./images/6_expertise_pa
-rticipantes_grupo_2_en.jpg>]
-Overfull \hbox (2.03046pt too wide) in paragraph at lines 330--332
+Overfull \hbox (2.03046pt too wide) in paragraph at lines 327--329
 []\T1/aer/m/n/9 Regarding in-ter-nal va-lid-ity, our study is lim-ited to the c
 hoices
  []
 
-) (./conclusion.tex) (./01-ArtigoFonte.bbl [6])
+[5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./images/6_expertise_pa
+rticipantes_grupo_2_en.jpg>]) (./conclusion.tex) (./01-ArtigoFonte.bbl)
 \Changes@OutFile=\write4
 \openout4 = `01-ArtigoFonte.loc'.
 
- [7
 
-] (./01-ArtigoFonte.aux) )
+[6] (./01-ArtigoFonte.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6301 strings out of 493315
- 88070 string characters out of 6137904
- 181878 words of memory out of 5000000
- 9533 multiletter control sequences out of 15000+600000
- 54723 words of font info for 75 fonts, out of 8000000 for 9000
+ 6283 strings out of 493315
+ 87544 string characters out of 6137904
+ 182874 words of memory out of 5000000
+ 9516 multiletter control sequences out of 15000+600000
+ 56876 words of font info for 78 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 53i,15n,92p,2345b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,15n,92p,2336b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
@@ -856,10 +826,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on 01-ArtigoFonte.pdf (7 pages, 394640 bytes).
+Output written on 01-ArtigoFonte.pdf (6 pages, 352018 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
