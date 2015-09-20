@@ -3,54 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 01-ArtigoFonte.aux
 The style file: abbrv.bst
 Database file #1: bibliografia.bib
-Repeated entry---line 101 of file bibliografia.bib
- : @inproceedings{Tekinerdogan_2009
- :                                 ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Lutellier_2015"
 Warning--empty journal in canfora_achievements_2011
 Warning--empty journal in ducasse_software_2009
 Warning--empty journal in ghanam_survey_2008
 Warning--empty journal in mitchell_heuristic_2002
-You've used 20 entries,
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            638 strings with 7781 characters,
-and the built_in function-call counts, 7757 in all, are:
-= -- 794
-> -- 303
-< -- 11
-+ -- 121
-- -- 97
-* -- 503
-:= -- 1196
-add.period$ -- 67
-call.type$ -- 20
-change.case$ -- 107
+            613 strings with 6973 characters,
+and the built_in function-call counts, 6394 in all, are:
+= -- 648
+> -- 249
+< -- 8
++ -- 100
+- -- 79
+* -- 417
+:= -- 994
+add.period$ -- 56
+call.type$ -- 17
+change.case$ -- 89
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 341
-empty$ -- 637
-format.name$ -- 97
-if$ -- 1722
+cite$ -- 21
+duplicate$ -- 276
+empty$ -- 530
+format.name$ -- 79
+if$ -- 1407
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 21
-newline$ -- 103
-num.names$ -- 42
-pop$ -- 124
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 88
+num.names$ -- 36
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 72
 quote$ -- 0
-skip$ -- 269
+skip$ -- 215
 stack$ -- 0
-substring$ -- 512
-swap$ -- 112
-text.length$ -- 11
+substring$ -- 433
+swap$ -- 86
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 66
 warning$ -- 4
-while$ -- 80
-width$ -- 22
-write$ -- 231
-(There was 1 error message)
+while$ -- 66
+width$ -- 19
+write$ -- 190
+(There were 5 warnings)
