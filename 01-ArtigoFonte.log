@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 15:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,24 +767,12 @@ ut line 71.
 ) (./experiment.tex [3 <./images/exemplo_comparacao_modelos_en.png (PNG copy)> 
 <./images/3_exemploMatrizViolada_en.jpg> <./images/exemplo_comparacao_modelos_2
 _en.png>]
-Overfull \hbox (1.69907pt too wide) in paragraph at lines 28--39
-\T1/aer/m/n/9 tech-nique us-ing ei-ther a semi-automatic de-com-po-si-tion base
-d
- []
-
-
-Overfull \hbox (6.82924pt too wide) in paragraph at lines 28--39
-\T1/aer/m/n/9 on soft-ware vi-su-al-iza-tion or an au-to-matic de-com-po-si-tio
-n based
- []
-
-
 <images/6_expertise_participantes_grupo_1_en.jpg, id=24, 873.2625pt x 427.5975p
 t>
 File: images/6_expertise_participantes_grupo_1_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_1_en.jpg>
 Package pdftex.def Info: images/6_expertise_participantes_grupo_1_en.jpg used o
-n input line 103.
+n input line 65.
 (pdftex.def)             Requested size: 218.31508pt x 106.89911pt.
 
 <images/6_expertise_participantes_grupo_2_en.jpg, id=25, 873.2625pt x 427.5975p
@@ -792,26 +780,44 @@ t>
 File: images/6_expertise_participantes_grupo_2_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_2_en.jpg>
 Package pdftex.def Info: images/6_expertise_participantes_grupo_2_en.jpg used o
-n input line 110.
+n input line 72.
 (pdftex.def)             Requested size: 218.31508pt x 106.89911pt.
 
-Overfull \hbox (6.15596pt too wide) in paragraph at lines 101--113
+Overfull \hbox (6.15596pt too wide) in paragraph at lines 63--75
 [][]   [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 165.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 118.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [4]
-Overfull \hbox (2.20322pt too wide) in paragraph at lines 224--237
+)
+Overfull \hbox (1.69907pt too wide) in paragraph at lines 151--152
+\T1/aer/m/n/9 tech-nique us-ing ei-ther a semi-automatic de-com-po-si-tion base
+d
+ []
+
+
+Overfull \hbox (6.82924pt too wide) in paragraph at lines 151--152
+\T1/aer/m/n/9 on soft-ware vi-su-al-iza-tion or an au-to-matic de-com-po-si-tio
+n based
+ []
+
+[4]
+Overfull \hbox (2.20322pt too wide) in paragraph at lines 192--205
 []\T1/aer/m/n/9 We also anal-ysed whether these re-sults are sta-tis-ti-cally m
 ean-
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./images/6_expertise_pa
 rticipantes_grupo_2_en.jpg>]
-Overfull \hbox (2.03046pt too wide) in paragraph at lines 362--364
+Overfull \hbox (2.03046pt too wide) in paragraph at lines 330--332
 []\T1/aer/m/n/9 Regarding in-ter-nal va-lid-ity, our study is lim-ited to the c
 hoices
  []
@@ -825,12 +831,12 @@ hoices
 ] (./01-ArtigoFonte.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 149 ({)
+### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  6301 strings out of 493315
  88070 string characters out of 6137904
- 177878 words of memory out of 5000000
+ 181878 words of memory out of 5000000
  9533 multiletter control sequences out of 15000+600000
  54723 words of font info for 75 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -850,7 +856,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on 01-ArtigoFonte.pdf (7 pages, 395050 bytes).
+Output written on 01-ArtigoFonte.pdf (7 pages, 394640 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
