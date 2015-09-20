@@ -1,4 +1,4 @@
-\section{EXPERIMENTAL STUDY}
+\section{EXPERIMENTAL STUDY}\label{sec:experiment}
 
 \added{The empirical} \deleted{Empirical} research presented in this \deleted{experimental} aims to evaluate the combination
 of well-known semi-automatic (software visualization) and automatic (data clustering) techniques in the context of a 
@@ -146,77 +146,52 @@ software visualization technique.
 %% \end{figure}
 
 
-\subsection{Execution}%
-Architecture recovery is an interpretive and interactive process involving many activities. 
-Therefore, it may be a time consuming task. For this reason, the experiment seeks to recover the overall 
-modular decomposition of the systems architecture. So, for each participant, the basic architecture concepts were introduced, 
-as well as the essential elements for detecting the overall architecture of the object systems. 
-
-The semi-automatic analysis of the Visual Basic system was carried out using the 
-\texttt{VBDepend} tool. This tool provides several mechanisms that facilitates the exploitation of the system 
-architecture in Visual Basic language based on visualization via dependency graphs and dependency structure matrix. 
-Figure  \ref{matrizDependenciaVBDependend} highlights a dependency structured  matrix (DSM)~\cite{Tekinerdogan_2009} 
-obtained using \texttt{VBDepend} 
-tool. 
+{\subsection{Execution}%
+\replaced{For each participant, the basic architecture concepts were introduced, as well as the essential elements for detecting the overall architecture of the object systems.}{Architecture recovery is an interpretive and interactive process involving many activities. Therefore, it may be a time consuming task. For this reason, the experiment seeks to recover the overall modular decomposition of the systems architecture. So, for each participant, the basic architecture concepts were introduced, as well as the essential elements for detecting the overall architecture of the object systems. The semi-automatic analysis of the Visual Basic system was carried out using the \texttt{VBDepend} tool. This tool provides several mechanisms that facilitates the exploitation of the system architecture in Visual Basic language based on visualization via dependency graphs and dependency structure matrix. Figure \ref{matrizDependenciaVBDependend} highlights a dependency structured  matrix (DSM)~\cite{Tekinerdogan_2009} obtained using \texttt{VBDepend} 
+tool. }
 
 % TODO: talvez levar esse texo para a secao de background.
 
 % In this case, the DSM is useful for analyzing the properties of complex applications. 
 % In an architectural analysis, the couplings between the architectural modules are described and various operations on the matrix can be performed in order to identify architectural relations \cite{Tekinerdogan_2009}.
 
-\begin{figure}[!h]
+\deleted{\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{6_matrizDependenciaVBDependend}
 	\caption{Dependency matrix obtained through the use of VBDepend tool.}
 	\label{matrizDependenciaVBDependend}
-\end{figure}
+\end{figure}}
 
-To analyse the Java systems, the subjects used two different tools: \texttt{ X-Ray} and \texttt{Architexa}. 
-The X-Ray software visualization tool is an open source software available as a plug-in for the Eclipse IDE. 
-Through this tool, one can get different visions of class-package dependencies and systemic complexity views on Java projects. 
-An example of a systemic complexity view can be seen in \ref{xray_complexidade}. In this kind of view, classes are represented 
-by rectangles; the width of the rectangles representing the number of methods implemented in a particular class, 
-while the height of the rectangle represents the number of lines of code in the class. 
-The bonding edge is the relationship between the classes. The nodes can be set as a vertical tree, highlighting the hierarchy of classes.
+\replaced{The semi-automatic analysis of the Visual Basic system was carried out using the \texttt{VBDepend} tool ,which is based on visualization via dependency graphs and dependency structure matrix. While to analyse the Java systems, the subjects used two different tools: \texttt{ X-Ray} and \texttt{Architexa}. Both Java analysis tools are plug-ins for the Eclipse IDE. Through these tools, one can get different views of class-package dependencies and systemic complexity views on Java projects. }{To analyse the Java systems, the subjects used two different tools: \texttt{ X-Ray} and \texttt{Architexa}. The X-Ray software visualization tool is an open source software available as a plug-in for the Eclipse IDE. Through this tool, one can get different views of class-package dependencies and systemic complexity views on Java projects. An example of a systemic complexity view can be seen in \ref{xray_complexidade}. In this kind of view, classes are represented by rectangles; the width of the rectangles representing the number of methods implemented in a particular class, while the height of the rectangle represents the number of lines of code in the class. The bonding edge is the relationship between the classes. The nodes can be set as a vertical tree, highlighting the hierarchy of classes.}
 
-\begin{figure}[!h]
+\deleted{\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{6_xray_complexidade}
 	\caption{Extracted systemic complexity view of a system in Java.}
 	\label{xray_complexidade}
-\end{figure}
+\end{figure}}
 
-Another tool used for viewing the source, and available to the participants of the 
+\deleted{Another tool used for viewing the source, and available to the participants of the 
 experiment is the \texttt{Architexa}. With this tool it is possible to create 
 different diagrams from the static analysis of the code. It is also available as a plug-in for 
 the Eclipse IDE. Using this tool, the participants of the experiment can explore different 
-aspects of the source code, such as a diagram of layers, as in Figure \ref{diagrama_architex}. The diagram 
-layers groups classes based on their respective directories or packages and illustrates the dependency 
-relationships between them. Also, different metrics can be used to highlight important aspects of the system, 
-for example, the rectangle representing the software entities. Software entities that contain a large amount 
-of code are represented by rectangles proportional to their size, which facilitates the identification of 
-important aspects of the code structure. When selected a software entity, the visualization tool displays 
-its respective dependencies by means of an arrow which indicates the origin and destination of the link. The 
-thicker the arrow, the higher the correlation between the elements. Moreover, the colors of each rectangle 
-are changed to emphasize the dependencies.
+aspects of the source code, such as a diagram of layers, as in Figure \ref{diagrama_architex}. The diagram layers groups classes based on their respective directories or packages and illustrates the dependency relationships between them. Also, different metrics can be used to highlight important aspects of the system, 
+for example, the rectangle representing the software entities. Software entities that contain a large amount of code are represented by rectangles proportional to their size, which facilitates the identification of important aspects of the code structure. When selected a software entity, the visualization tool displays its respective dependencies by means of an arrow which indicates the origin and destination of the link. The 
+thicker the arrow, the higher the correlation between the elements. Moreover, the colors of each rectangle are changed to emphasize the dependencies.}
 
 
-\begin{figure}[!h]
+\deleted{\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{6_diagrama_architex_2}
 	\caption{Extracted systemic complexity view of a system in Java.}
 	\label{diagrama_architex}
-\end{figure}
+\end{figure}}
 
 
-The \texttt{Bunch} tool \cite{mitchell_heuristic_2002} was used as representant of 
-the automatic approach for architecture recovery. It is an open-source initiative that implements a  
-recovering approach based on clustering provides an intuitive graphical interface, as shown in {\color{red}Figure~\ref{}}. Participants in 
-the experiment were instructed to choose between the available algorithms and run the clustering process in the system under analysis. 
+\replaced{The \texttt{Bunch} tool \cite{mitchell_heuristic_2002} was used for the automatic approach of the architecture recovery. Participants were instructed to use the hill-climbing algorithm implemented in the tool, following evaluation results from previous work by~\cite{Garcia:ASE2013}.}{The \texttt{Bunch} tool \cite{mitchell_heuristic_2002} was used as representant of the automatic approach for architecture recovery. It is an open-source initiative that implements a recovery approach based on clustering provides an intuitive graphical interface, as shown in {\color{red}Figure~\ref{}}. Participants in 
+the experiment were instructed to choose between the available algorithms and run the clustering process in the system under analysis.
 \added[remark={isso nao diminui o controle do experimento? isso nao diminui as chances de replicar o estudo?}]{The participants were able to change} the input 
-parameters of the algorithms and run the clustering tool as often as they felt necessary. \texttt{Bunch} generates a file containing the modules 
-automatically mapped from the selected algorithm. Through the output of the analysis, the participants comprised the architectural 
-model of the system under analysis.
+parameters of the algorithms and run the clustering tool as often as they felt necessary. \texttt{Bunch} generates a file containing the modules automatically mapped from the selected algorithm. Through the output of the analysis, the participants comprised the architectural model of the system under analysis.}
 
 
 \subsection{Results}%
@@ -225,11 +200,7 @@ Through the results, calculated from the comparison of the models produced by th
 it was possible to investigate the use of architecture recovery approaches using a combination of automatic (clustering) and semi-automatic (software visualization) 
 techniques to identify the modular decomposition of a system.  
 
-To analyze the significance of the results, it was used the paired \texttt{t-test}. For this, we observed the 
-different conditions that underpin the paired t-test, as: two related groups; no significant outliers; 
-distribution of the differences in the dependent variable between the two related groups is approximately normally 
-distributed. Table~\ref{tabelaResultadoVB} presents the comparison data between the scores obtained using one and two techniques. 
-It is possible to realize that the average accuracy of the models obnained in Visual Basic sytems using one technique 
+To analyze the significance of the results, it was used the paired \texttt{t-test}. For this, we observed the different conditions that underpin the paired t-test, as: two related groups; no significant outliers; distribution of the differences in the dependent variable between the two related groups is approximately normally distributed. Table~\ref{tabelaResultadoVB} presents the comparison data between the scores obtained using one and two techniques. It is possible to realize that the average accuracy of the models obnained in Visual Basic sytems using one technique 
 was approximately 51\%, and the average accuracy of the models obtained using the combination of both techniques was approximately 77\%--- that is, a difference of 26\%. 
 On the other hand, it is possible to note that the mean of the models obtained in Java systems using one technique was approximately 48\%; when used both techniques, 
 the mean was approximately 72\%--- a difference of almost 24\%.
@@ -384,36 +355,20 @@ together provided to the participants a different perspective of the software, n
 
 In addition, we observed that the order of execution of the techniques does not significantly affect the results. This indicates that there is no specific 
 order for the application of the techniques in the approach. This was also confirmed by the feedback from the participants. When asked about the preference of the order 
-of execution of techniques, some preferred to start with clustering, while others, with the visualization. Thus, the execution of techniques can happen 
-in a subjective way that best meets the needs of the responsible for the recovery of architecture.
-
-
+of execution of techniques, some preferred to start with clustering, while others, with the visualization. Thus, the execution of techniques can happen in a subjective way that best meets the needs of the responsible for the recovery of architecture.
 
 \subsection{Threats to validity}%
 
 Regarding internal validity, our study is limited to the choices we made 
-with respect to the tools used in the experiment (for representign 
-both semi-automatic and automatic approaches for architecture recovery) 
-and the object systems used in the analyses. It is important to note that 
-the selected tools have been widely used either in industry (such as \texttt{VBDepend} and 
-\texttt{Architexa}) or in achademic efforts (\texttt{Bunch}). 
+with respect to the analysis tools used in the experiment and the object systems used in the analyses. However, we should note that the selected analysis tools have been widely used either in industry or in academia.\deleted{(such as \texttt{VBDepend} and \texttt{Architexa}) or in academic efforts (\texttt{Bunch}).} 
 
-Some criticism to our paper 
-might also arise due to the the participants selection. Nevertheless, all participants of the experiment have experience 
-in analysis and development of software systems, which contributes to the representation of the group of analysts 
-and system developers who may require an architectural reconstruction process. 
-The participants of the two experimental groups have similar characteristics.
-Regarding the object systems, they are implementeed using two programming languages, Visual Basic and Java, which 
-contributes to the representation of an organizational environment in which there is no homogeneity in relation to the programming language used by 
-the systems in the company. Despite the fact that the participants are separated into two groups and run the experiment in different objects systems, 
-the recovery approach was conducted in systems with similar architectures. Due to this similarity, it is expected that the results are not influenced by 
-the programming language objects, or difference between the systems.
+Some limitations to our results might also arise due to the the participants selection. \replaced{All participants of the experiment have comparable experience in analysis and development of software systems in VB and Java. Additionally, our results show there is no statistically significant difference on the results each group provided.}{Nevertheless, all participants of the experiment have experience in analysis and development of software systems, which contributes to the representation of the group of analysts and system developers who may require an architectural reconstruction process. The participants of the two experimental groups have similar characteristics.}
+\deleted{Regarding the object systems, they are implementeed using two programming languages, Visual Basic and Java, which contributes to the representation of an organizational environment in which there is no homogeneity in relation to the programming language used by the systems in the company.} 
+Despite the fact that the participants are separated into two groups and run the experiment in different objects systems and programming languages, the recovery approach was conducted in systems with similar architectures. Due to this similarity, it is expected that the results are not influenced by the programming language objects, or difference between the systems, as we make this evident via the statistical comparison.
 
 % \subsection{External validity}%
-Regarding external validity, the size in LOC and the complexity of the systems objects can influence the generalization of the results. 
-However, such systems present complexity and size that are expected to be similar to other systems developed to meet 
-sectorial needs of an organization. Also, the limited number of participants of the experiment can not allow a generalization of the experiment. 
-However, through the separation method of the group at random, it was expected to decrease the 
+Regarding external validity, the size in LOC and the complexity of the systems objects can influence the generalization of the results. However, such systems present complexity and size that are expected to be similar to other systems developed to meet 
+sectorial needs of an organization. Also, the limited number of participants of the experiment can not allow a generalization of the experiment. However, through the separation method of the group at random, it was expected to decrease the 
 confusion factor.
 
 
