@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  21 SEP 2015 00:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  21 SEP 2015 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,6 +782,9 @@ Overfull \hbox (2.20322pt too wide) in paragraph at lines 187--200
 ean-
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -826,7 +829,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on 01-ArtigoFonte.pdf (6 pages, 351891 bytes).
+Output written on 01-ArtigoFonte.pdf (6 pages, 351710 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
