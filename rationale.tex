@@ -25,23 +25,23 @@ By analyzing the results in Table~\ref{ocorrencias_1}, it is possible to see tha
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{exemplo_comparacao_modelos_en}
+	\includegraphics[width=0.35\textwidth]{exemplo_comparacao_modelos_en_novo}
 	\caption{Different results for comparison.}
 	\label{exemplo_comparacao_modelos}
 \end{figure}
 
 However, a more careful analysis of the results may reveal that other factors may influence the final model produced by clustering and visualization software techniques. A software system throughout its life cycle is susceptible to several changes in its architecture. However, such operations can introduce architectural violations in the code, for example, violation of the layers, break of abstractions or feature duplication \cite{kazman_view_1998}. In this context, reverse engineering methods are strongly affected by those shortcomings in the system code base~\cite{Platenius_2012}.  Such violations should be identified and addressed, so the correctness of the final model should not be affected.
 
-To illustrate an architecture violation, we will use the results of Figure \ref{3_exemploMatrizViolada}, which depicts a representation of architecture components through a dependency structure matrix (DSM). \textcolor{red}{The figure depicts how the interaction works. The software elements are numbered from 1 to 4, where, for example, the Presentation module (2) requires information from the Visualization module (1). On the other hand, the figure shows also that the Visualization module (1) provides information to the Data module (4). This relationship is violated by layer "Date" (4), since it uses resources of the layer  "View" (1), characterizing an architectural violation.} Removing such violation, the modularization results would likely change. 
+To illustrate an architecture violation, we will use the results of Figure \ref{3_exemploMatrizViolada}, which depicts a representation of architecture components through a dependency structure matrix (DSM). The figure depicts how the interaction works. The software elements are numbered from 1 to 9, where, for example, the module 1 requires information from module 2. On the other hand, the figure shows also that the module 4 provides information to the module 5. This relationship is violated by module 5, since it uses resources of the module 4, characterizing an architectural violation. Removing such violation, the modularization results would likely change. 
 
  \begin{figure}[!h]
  	\centering
- 	\includegraphics[width=0.3\textwidth]{3_exemploMatrizViolada_en}
+ 	\includegraphics[width=0.3\textwidth]{3_exemploMatrizViolada_en_novo}
  	\caption{DSM representation	of dependences.}
  	\label{3_exemploMatrizViolada}
  \end{figure}
  
-\deleted{ Assuming entity 4 is wrongly mapped as part of a module. This happens due to a coupling between entities 4 and 5, which illustrates an architecture violation. All results would be classified differently if such violation was removed, as shown in Figure \ref{exemplo_comparacao_modelos2}}. Table \ref{ocorrencias_2} presents the results of the new analysis, taking into account the aggregation of similar entities after the identified architecture violation was removed. Analyzing the results, it is possible to check the impact of the violation. The module containing the first mapping \{1,2,3\} now adds entity 4 in 100\% of the times as part of the same module. As for the mapping \{5,6\} there is also a higher chance of being classified in a same module, as both entities occur as part of the same module with higher frequency after the architecture violation was detected and removed.
+\deleted{ Assuming entity 4 is wrongly mapped as part of a module. This happens due to a coupling between entities 4 and 5, which illustrates an architecture violation. All results would be classified differently if such violation was removed, as shown in Figure \ref{exemplo_comparacao_modelos2}.} Table \ref{ocorrencias_2} presents the results of the new analysis, taking into account the aggregation of similar entities after the identified architecture violation was removed. Analyzing the results, it is possible to check the impact of the violation. The module containing the first mapping \{1,2,3\} now adds entity 4 in 100\% of the times as part of the same module. As for the mapping \{5,6\} there is also a higher chance of being classified in a same module, as both entities occur as part of the same module with higher frequency after the architecture violation was detected and removed.
 
 
 \begin{table}[]
