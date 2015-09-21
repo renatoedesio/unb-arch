@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 21:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  21 SEP 2015 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,12 +738,12 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 47.
 
 ) (./experiment.tex
-Underfull \vbox (badness 5161) has occurred while \output is active []
-
-
-Overfull \hbox (3.27618pt too wide) in paragraph at lines 46--54
+Overfull \hbox (3.27618pt too wide) in paragraph at lines 44--52
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./images/exemplo_comparacao_modelos_en.png (PNG copy)> <./images/3_exemploM
 atrizViolada_en.jpg>]
@@ -752,7 +752,7 @@ t>
 File: images/6_expertise_participantes_grupo_1_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_1_en.jpg>
 Package pdftex.def Info: images/6_expertise_participantes_grupo_1_en.jpg used o
-n input line 65.
+n input line 63.
 (pdftex.def)             Requested size: 218.31508pt x 106.89911pt.
 
 <images/6_expertise_participantes_grupo_2_en.jpg, id=24, 873.2625pt x 427.5975p
@@ -760,36 +760,40 @@ t>
 File: images/6_expertise_participantes_grupo_2_en.jpg Graphic file (type jpg)
  <use images/6_expertise_participantes_grupo_2_en.jpg>
 Package pdftex.def Info: images/6_expertise_participantes_grupo_2_en.jpg used o
-n input line 72.
+n input line 70.
 (pdftex.def)             Requested size: 218.31508pt x 106.89911pt.
 
-Overfull \hbox (6.15596pt too wide) in paragraph at lines 63--75
+Overfull \hbox (6.15596pt too wide) in paragraph at lines 61--73
 [][]   [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 118.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 116.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 [][]\T1/aer/m/n/9 The re-sult-ing mod-els are avail-able at
  []
 
 
-Overfull \hbox (2.20322pt too wide) in paragraph at lines 189--202
+Overfull \hbox (2.20322pt too wide) in paragraph at lines 187--200
 []\T1/aer/m/n/9 We also anal-ysed whether these re-sults are sta-tis-ti-cally m
 ean-
  []
 
 [4]
-Overfull \hbox (2.03046pt too wide) in paragraph at lines 327--329
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.03046pt too wide) in paragraph at lines 325--327
 []\T1/aer/m/n/9 Regarding in-ter-nal va-lid-ity, our study is lim-ited to the c
 hoices
  []
 
-) (./conclusion.tex [5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./i
-mages/6_expertise_participantes_grupo_2_en.jpg>]) (./01-ArtigoFonte.bbl)
+[5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./images/6_expertise_pa
+rticipantes_grupo_2_en.jpg>]) (./conclusion.tex) (./01-ArtigoFonte.bbl)
 \Changes@OutFile=\write4
 \openout4 = `01-ArtigoFonte.loc'.
 
@@ -797,12 +801,12 @@ mages/6_expertise_participantes_grupo_2_en.jpg>]) (./01-ArtigoFonte.bbl)
 [6] (./01-ArtigoFonte.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 102 ({)
+### simple group (level 1) entered at line 100 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  6283 strings out of 493315
  87544 string characters out of 6137904
- 180874 words of memory out of 5000000
+ 182874 words of memory out of 5000000
  9516 multiletter control sequences out of 15000+600000
  56876 words of font info for 78 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -822,7 +826,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on 01-ArtigoFonte.pdf (6 pages, 351390 bytes).
+Output written on 01-ArtigoFonte.pdf (6 pages, 351891 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
