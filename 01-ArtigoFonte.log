@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 20:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.25)  20 SEP 2015 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,20 +730,20 @@ File: images/3_exemploMatrizViolada_en.jpg Graphic file (type jpg)
 
 <use images/3_exemploMatrizViolada_en.jpg>
 Package pdftex.def Info: images/3_exemploMatrizViolada_en.jpg used on input lin
-e 40.
+e 39.
 (pdftex.def)             Requested size: 151.20154pt x 87.75629pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 48.
+               Default added (so using `tbp') on input line 47.
 
 ) (./experiment.tex
+Underfull \vbox (badness 5161) has occurred while \output is active []
+
+
 Overfull \hbox (3.27618pt too wide) in paragraph at lines 46--54
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./images/exemplo_comparacao_modelos_en.png (PNG copy)> <./images/3_exemploM
 atrizViolada_en.jpg>]
@@ -783,17 +783,13 @@ ean-
  []
 
 [4]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Overfull \hbox (2.03046pt too wide) in paragraph at lines 327--329
 []\T1/aer/m/n/9 Regarding in-ter-nal va-lid-ity, our study is lim-ited to the c
 hoices
  []
 
-[5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./images/6_expertise_pa
-rticipantes_grupo_2_en.jpg>]) (./conclusion.tex) (./01-ArtigoFonte.bbl)
+) (./conclusion.tex [5 <./images/6_expertise_participantes_grupo_1_en.jpg> <./i
+mages/6_expertise_participantes_grupo_2_en.jpg>]) (./01-ArtigoFonte.bbl)
 \Changes@OutFile=\write4
 \openout4 = `01-ArtigoFonte.loc'.
 
@@ -806,7 +802,7 @@ rticipantes_grupo_2_en.jpg>]) (./conclusion.tex) (./01-ArtigoFonte.bbl)
 Here is how much of TeX's memory you used:
  6283 strings out of 493315
  87544 string characters out of 6137904
- 182874 words of memory out of 5000000
+ 180874 words of memory out of 5000000
  9516 multiletter control sequences out of 15000+600000
  56876 words of font info for 78 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
@@ -826,7 +822,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on 01-ArtigoFonte.pdf (6 pages, 352018 bytes).
+Output written on 01-ArtigoFonte.pdf (6 pages, 351390 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream

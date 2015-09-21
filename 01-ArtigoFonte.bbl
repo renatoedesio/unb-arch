@@ -1,20 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Architexa}
-Architexa: Mapping code.
-\newblock \url{http://www.architexa.com/}.
-\newblock Accessed: 2015-09-20.
-
-\bibitem{VBDepend}
-Vbdepend.
-\newblock \url{http://www.vbdepend.com/}.
-\newblock Accessed: 2015-09-20.
-
-\bibitem{X-Ray}
-X-ray software visualization plug-in.
-\newblock \url{http://xray.inf.usi.ch/xray.php}.
-\newblock Accessed: 2015-09-20.
-
 \bibitem{canfora_achievements_2011}
 G.~Canfora, M.~D. Penta, and L.~Cerulo.
 \newblock Achievements and challenges in software reverse engineering.
@@ -70,6 +55,12 @@ T.~Lutellier, D.~Chollak, J.~Garcia, L.~Tan, D.~Rayside, N.~Medvidovi\'{c}, and
   Engineering - Volume 2}, ICSE '15, pages 69--78, Piscataway, NJ, USA, 2015.
   IEEE Press.
 
+\bibitem{X-Ray}
+J.~Malnati.
+\newblock {X-Ray web site}.
+\newblock \url{http://xray.inf.usi.ch/xray.php}, 2015.
+\newblock [Online; accessed 20-september-2015].
+
 \bibitem{craft}
 B.~Mitchell and S.~Mancoridis.
 \newblock Craft: a framework for evaluating software clustering results in the
@@ -98,11 +89,23 @@ M.~Shtern and V.~Tzerpos.
 \newblock Clustering methodologies for software engineering.
 \newblock {\em Adv. Soft. Eng.}, 2012:1:1--1:1, Jan. 2012.
 
+\bibitem{Architexa}
+V.~Sinha and C.~Deschenes.
+\newblock {Architexa web site}.
+\newblock \url{http://www.architexa.com/}, 2015.
+\newblock [Online; accessed 20-september-2015].
+
 \bibitem{teyseyre_overview_2009}
 A.~Teyseyre and M.~Campo.
 \newblock An overview of 3d software visualization.
 \newblock {\em Visualization and Computer Graphics, IEEE Transactions on},
   15(1):87--105, Jan 2009.
+
+\bibitem{VBDepend}
+VBDepdent-CoderGears.
+\newblock {VBDepend web site}.
+\newblock \url{http://www.vbdepend.com/}, 2015.
+\newblock [Online; accessed 20-september-2015].
 
 \bibitem{wettel_software_2011}
 R.~Wettel, M.~Lanza, and R.~Robbes.
