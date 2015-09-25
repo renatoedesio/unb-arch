@@ -18,6 +18,7 @@ of well-known semi-automatic (software visualization) and automatic (software cl
 	}
 	\label{tab:RecoveryTechniques}
 \end{table}
+
 The underlying research question for this experiment is as follows: 
 \emph{Does the use of software visualization technique, along with the clustering technique, increase the accuracy of the architectural model produced, in comparison with using one of the techniques alone?}
   
@@ -31,11 +32,7 @@ The underlying research question for this experiment is as follows:
 %% other studies based on the same plan~\cite{Juristo_2010}.}
 
 The study considered four software systems, written in two distinct programming languages (Visual Basic and Java). Table \ref{tabelaSistemasObjetos}  presents relevant information on the characteristics of each object of the experiment. Systems A 
-and B are legacy systems still operating in the University of Brasilia, 
-and both support the management of the academic routine of college students. 
-Systems C and D have been developed on a new platform, in order 
-to modernize legacy systems written in Visual Basic. These systems 
-deal with administrative university routines.
+and B are legacy systems still operating in the University of Brasilia, and both support the management of the academic routine of college students. Systems C and D have been developed on a new platform, in order to modernize legacy systems written in Visual Basic. These systems deal with administrative university routines.
 
 \begin{table}[h]
 	\centering
@@ -53,19 +50,16 @@ deal with administrative university routines.
 
 %\subsubsection{Subject selection}%
 
-The participants involved in the experiment are system developers, with different levels of experience. We selected a total of ten participants using a convenience approach, that is, the participants volunteered for participating in the study. Subjects were randomly divided into two groups, henceforth called Group 1 and Group 2. At the beginning of each session, participants were asked about their level of knowledge in relevant aspects related to architecture recovery. Figure~\ref{fig:participantes}(a) and Figure~\ref{fig:participantes}(b) 
-detail the expertise of the participants in the first and second groups, respectively. 
-The y-axis represents the percentage of professionals in the corresponding expertise level.
+The participants involved in the experiment are system developers, with different levels of experience. We selected a total of ten participants \replaced{that agreed to voluntarily participate in the study}{using a convenience approach, that is, the participants volunteered for participating in the study}. Subjects were randomly divided into two groups, henceforth called Group 1 and Group 2. At the beginning of each session, participants were asked about their level of knowledge in relevant aspects related to architecture recovery. Figure~\ref{fig:participantes}(a) and Figure~\ref{fig:participantes}(b) detail the expertise of the participants in the first and second groups, respectively. The y-axis represents the percentage of professionals in the corresponding expertise level.
 
-\begin{figure*}[t!]
- \begin{subfigure}[t]{0.5\textwidth}
+\begin{figure*}[htb]
+ \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[scale=0.25]{6_expertise_participantes_grupo_1_en}
 	\caption{Participants expertise in Group 1.}
 %	\label{conhecimentoGrupo1}
  \end{subfigure}
- ~
- \begin{subfigure}[t]{0.5\textwidth}
+ \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[scale=0.25]{6_expertise_participantes_grupo_2_en}
 	\caption{Participants expertise in Group 2.}
@@ -146,7 +140,7 @@ parameters of the algorithms and run the clustering tool as often as they felt n
 
 %Participants in Group 1 started the extraction in a Visual Basic system using the clustering technique. The results of this extraction was collected. Then we presented the second technique (a semi-automatic visualization tool) and requested the subjects to produce a second model, applying both techniques. Afterwards, the same procedure was applied to the Java systems, but on the reverse order, i.e, first using a software visualization tool and then clustering. For the participants in Group 2, the same procedure applied, but starting with the software visualization technique.
 
-For each of the two participating groups, we randomly selected one system in Java and one system in Visual Basic, so that in the end each group analyses systems in both languages. Then, each participant started the architecture recovery procedure by applying two reengineering approaches per session, which produced two models representing the modular decomposition of the system. In the first session, the participant applied only one technique using either a semi-automatic decomposition based on software visualization or an automatic decomposition based on software clustering. After obtaining the first model, the other approach was presented and it was requested to produce a new model, based on the two techniques. In this way, it was possible to calculate the accuracy of the resulting models\footnote{The resulting models are available at https://github.com/ArchRecovery-SAC2016/files}.
+For each of the two participating groups, we randomly selected one system in Java and one system in Visual Basic, so that in the end each group analyses systems in both languages. Then, each participant started the architecture recovery procedure by applying two reengineering approaches per session, which produced two models representing the modular decomposition of the system. In the first part of the session, the participant applied only one technique using either a semi-automatic decomposition based on software visualization or an automatic decomposition based on software clustering. After obtaining the first model, the other approach was presented and it was requested to produce a new model, based on the two techniques. We also made sure that the application order of each technique was prioritized in one of the two systems in each group. In this way, it was possible to calculate the accuracy of the resulting models using one technique, two techniques while varying their order of application.\footnote{The resulting models are available at https://github.com/ArchRecovery-SAC2016/files}.
 
 To calculate the accuracy of the recovered architectural representation of the modular decomposition of the systems, and then answering the questions of the experiment, we used the Jaccard similarity coefficient, defined by the formula:
 
@@ -159,11 +153,11 @@ modules; $b$= number of modules recovered in B but not in A; $c$= number of reco
 
 \subsection{Results}%
 
-Through the results, calculated from the comparison of the models produced by the participants with models produced by experts in the field, 
-it was possible to investigate the use of architecture recovery approaches using a combination of automatic (clustering) and semi-automatic (software visualization) 
-techniques to identify the modular decomposition of a system.  
+%Through the results, calculated from the comparison of the models produced by the participants with models produced by experts in the field, it was possible to investigate the use of architecture recovery approaches using a combination of automatic (clustering) and semi-automatic (software visualization) techniques to identify the modular decomposition of a system.  
 
-To analyze the significance of the results, it was used the paired \texttt{t-test}. To use such parametric approach, we observed the different conditions that underpin the paired t-test, as: two related groups; no significant outliers; distribution of the differences in the dependent variable between the two related groups is approximately normally distributed. Table~\ref{tabelaResultadoVB} presents the comparison data between the scores obtained using one and two techniques. It is possible to realize that the average accuracy of the models obnained in Visual Basic sytems using one technique 
+To analyze the significance of the results, it was used the paired \texttt{t-test}. To use such parametric approach, we observed the different conditions that underpin the paired t-test, as: two related groups; no significant outliers; distribution of the differences in the dependent variable between the two related groups is approximately normally distributed. 
+
+Table~\ref{tabelaResultadoVB} presents the comparison data between the scores obtained using one and two techniques. It is possible to realize that the average accuracy of the models obnained in Visual Basic sytems using one technique 
 was approximately 51\%, and the average accuracy of the models obtained using the combination of both techniques was approximately 77\%--- that is, a difference of 26\%. 
 On the other hand, it is possible to note that the mean of the models obtained in Java systems using one technique was approximately 48\%; when used both techniques, 
 the mean was approximately 72\%--- a difference of almost 24\%.
@@ -186,17 +180,7 @@ the mean was approximately 72\%--- a difference of almost 24\%.
 
 We also analysed whether these results are statistically meaningful, carring out the paired \texttt{t-test}. 
 Table~\ref{tabelaResultadoTesteTVB} details the results of the test, comparing the results obtained using one technique 
-with the outcomes obtained using two techniques (automatic and semi-automatic). To interpret the results it is necessary to observe the Sig. (2-tailed) value, 
-also known as \texttt{p-value}. 
-%This is the value that determines whether the means are statistically different. If the Sig.(2-tailed) value is greater than 0.05 
-%then there is no statistically significant difference between the two conditions. On the other hand, if the value is less than or equal to 0.05 then there 
-%is a statistically significant difference between the two conditions. The significance level of 0.05 reflects the 95\% confidence interval used as parameter value for the calculations.
-Analyzing the data for the systems in Visual Basic, it is possible to conclude that there is a significant difference between the scores obtained using one technique 
-($Mean= 0.517$, $Std.\ Deviation = 0.091$) and two techniques ($Mean= 0.771$, $Std.\ Deviation= 0.077$); $t(9)=-10.046$, $p= 0.000$. So, with 95\% confidence, 
-we can assume that there is an increase in results from 0.196 to 0.310 when used two techniques for software architecture recovery. 
-Analyzing the data for the systems in Java language, it is possible to conclude that there is a significant difference between the mean values 
-obtained using one technique ($Mean= 0.483$, $Std.\ Deviation= 0.060$) and two techniques ($Mean= 0.728$, $Std.\ Deviation= 0.059$); $t(9)= -10.046$, $p= 0.000$. 
-Thus, with 95\% of confidence, the accuracy improvement varies from 0.207 to 0.283 when used two techniques for software architecture recovery. %For the sistems in Java
+with the outcomes obtained using two techniques (automatic and semi-automatic). To interpret the results it is necessary to observe the Sig. (2-tailed) value, also known as \texttt{p-value}. 
 
 \begin{table}[h]
 	\centering
@@ -215,11 +199,11 @@ Thus, with 95\% of confidence, the accuracy improvement varies from 0.207 to 0.2
 	}
 \end{table}
 
-After these analyzes, it is possible to conclude that using two techniques produced better results than using only one technique in a software architecture recovery process. 
-Thus, it is possible to answer our research question. 
+Analyzing the data for the systems in Visual Basic, it is possible to conclude that there is a significant difference between the scores obtained using one technique ($Mean= 0.517$, $Std.\ Deviation = 0.091$) and two techniques ($Mean= 0.771$, $Std.\ Deviation= 0.077$); $t(9)=-10.046$, $p= 0.000$. So, with 95\% confidence, we can assume that there is an increase in results from 0.196 to 0.310 when used two techniques for software architecture recovery. Analyzing the data for the systems in Java language, it is possible to conclude that there is a significant difference between the mean values obtained using one technique ($Mean= 0.483$, $Std.\ Deviation= 0.060$) and two techniques ($Mean= 0.728$, $Std.\ Deviation= 0.059$); $t(9)= -10.046$, $p= 0.000$. Thus, with 95\% of confidence, the accuracy improvement varies from 0.207 to 0.283 when used two techniques for software architecture recovery. %For the sistems in Java
+
+After these analyzes, it is possible to conclude that using two techniques produced better results than using only one technique in a software architecture recovery process. Thus, it is possible to answer our research question. 
 %, where it is questioned whether the use of both techniques increases the accuracy of the obtained architectural models. 
-Given the above results, we conclude that the use of both techniques present a positive impact on the accuracy of the models produced, 
-since all the results indicated an improvement in the accuracy of the models when used the two techniques together.
+Given the above results, we conclude that the use of both techniques significantly impacts the accuracy of the models produced, since all the results indicated an accuracy increase of the models when used the two techniques together.
 
 %% \replaced{To enhance the results obtained, further analyzes were performed. First, }{To answer RQ2,}, we performed an analysis of the impact on the programming 
 %% language on the accuracy of the results.  From Table \ref{tabelaOutrasAnalises2} it can be seen that in Visual Basic systems, the average accuracy of the models 
@@ -257,9 +241,7 @@ since all the results indicated an improvement in the accuracy of the models whe
 %% 	}
 %% \end{table}
 
-We also analyzed if the order of the recovery technique affects the results. This analysis is useful to check whether starting from visualization or clustering in our process influences the accuracy of the results. 
-Table~\ref{tabelaOutrasAnalises4} details the descriptive results of the data. When first using software visualization and then using clustering, the accuracy of the models 
-obtained was approximately 77\%. Differently, using first the clustering technique then software visualization technique, the accuracy of the models 
+We also analyzed if the order of the recovery technique affects the results. This analysis is useful to check whether starting from visualization or clustering in our process influences the accuracy of the results. Table~\ref{tabelaOutrasAnalises4} details the descriptive results of the data. When first using software visualization and then using clustering, the accuracy of the models obtained was approximately 77\%. Using first clustering followed by software visualization technique, the accuracy of the models 
 obtained was approximately 72\%.
 
 \begin{table}[h]
@@ -276,9 +258,7 @@ obtained was approximately 72\%.
 	}
 \end{table}
 
-To investigate the difference between the means, it was conducted a paired \texttt{t-test}. The results are shown in Table \ref{table:test_t4}. Through data analysis, 
-it is possible to conclude that there is no significant difference between the mean values obtained using Software Visualization prior to Clustering (Mean=0.771,  Std. Deviation= 0.077) or 
-Clustering prior to Software Visualization (Mean= 0.728, Std. Deviation= 0.059); t(9)= 1.456, p= 0.179.
+To investigate the statistical significance of the difference between the means, it was conducted a paired \texttt{t-test}. The results are shown in Table \ref{table:test_t4}. Results show that, with  95\% confidence interval, the lower and upper limit range includes 0. As a result, it is possible to conclude that there is no statistical significance of the difference between the mean values obtained using software visualization prior to clustering or vice versa.
 
 \begin{table}[h]
 	\centering
@@ -304,9 +284,7 @@ Clustering prior to Software Visualization (Mean= 0.728, Std. Deviation= 0.059);
 
 % First, it was examined whether the use of software visualization and clustering techniques together improves the accuracy of the architecture recovery process. 
 
-Altogether, the results showed that, when used one technique after the other, the accuracy of the models produced had a significant increase. 
-This suggests that the investigated techniques act in a complementary manner by providing additional information. Also, the use of both techniques 
-together provided to the participants a different perspective of the software, not perceived or not represented when compared to using only a technique. 
+Altogether, the results showed that the accuracy of the models produced had a significant increase when two techniques were used together compared to using one technique alone, irrespective of the technique order applied. This suggests that the investigated techniques act in a complementary manner by providing additional information. Also, the use of both techniques together provided to the participants a different perspective of the software, not perceived or not represented when compared to using only a technique. 
 %Thus, allowing for recovery of the architecture more accurately. 
 
 %Second, an analysis was performed to verify if programming language can affect the recovery of the architecture. 
@@ -316,18 +294,15 @@ together provided to the participants a different perspective of the software, n
 % clustering approach, implemented by Bunch tool, is designed to be independent of language, since it is only necessary 
 % to set up a MDG containing the dependency relationships between the entities of the source code, and this is achieved through static analysis techniques of the source code.
 
-In addition, we observed that the order of execution of the techniques does not significantly affect the results. This indicates that there is no specific 
-order for the application of the techniques in the approach. This was also confirmed by the feedback from the participants. When asked about the preference of the order 
-of execution of techniques, some preferred to start with clustering, while others, with the visualization. Thus, the execution of techniques can happen in a subjective way that best meets the needs of the responsible for the recovery of architecture.
+In addition, we observed that the order of execution of the techniques does not significantly affect the results. This indicates that there is no specific order for the application of the techniques in the approach. This was also confirmed by the feedback from the participants. When asked about the preference of the techniques execution order, there was no common agreement among the participants in both groups. Thus, our results indicate that the achievement of accuracy does not require a particular execution order of the techniques, which might happen in a subjective way that best meets the needs of the responsible for the architecture recovery.
 
 \subsection{Threats to validity}%
 
-Regarding internal validity, our study is limited to the choices we made 
-with respect to the analysis tools used in the experiment and the object systems used in the analyses. However, we should note that the selected analysis tools have been widely used either in industry or in academia.\deleted{(such as \texttt{VBDepend} and \texttt{Architexa}) or in academic efforts (\texttt{Bunch}).} 
+Regarding internal validity, our study is limited to the choices we made with respect to the analysis tools used in the experiment and the object systems used in the analyses. However, we should note that the selected analysis tools have been widely used either in industry or in academia.\deleted{(such as \texttt{VBDepend} and \texttt{Architexa}) or in academic efforts (\texttt{Bunch}).} 
 
 Some limitations to our results might also arise due to the the participants selection. \replaced{In order to avoid biased results, the groups participants were randomly selected and both groups have comparable experience in analysis and development of software systems in VB and Java.}{Nevertheless, all participants of the experiment have experience in analysis and development of software systems, which contributes to the representation of the group of analysts and system developers who may require an architectural reconstruction process. The participants of the two experimental groups have similar characteristics.}
 \deleted{Regarding the object systems, they are implementeed using two programming languages, Visual Basic and Java, which contributes to the representation of an organizational environment in which there is no homogeneity in relation to the programming language used by the systems in the company.} 
-Despite the fact that the participants are separated into two groups and run the experiment in different objects systems and programming languages, the recovery approach was conducted in systems with similar architecture styles. Due to this similarity, it is expected that the results are not influenced by the programming language objects, or difference between the systems, as we make this evident via statistical testing.
+Despite the fact that the participants were separated into two groups and ran the experiment in different objects systems and programming languages, the recovery approach was conducted in systems with similar architecture styles. Due to this similarity, it is expected that the results were not influenced by the programming language objects, or difference between the systems, as we make this evident via statistical testing.
 
 % \subsection{External validity}%
 Regarding external validity, the size in LOC and the complexity of the systems objects can influence the generalization of the results. However, such systems present complexity and size that are expected to be similar to other systems developed to meet 
